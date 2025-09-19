@@ -224,9 +224,6 @@
         <?php wp_head(); ?>
     </head>
     <body <?php body_class('lightBlueBg'); ?>>
-        <div class="loaderSpinner" id="loaderSpinner">
-            <div class="loaderSpinnerJson" data-link="<?php echo get_bloginfo('template_directory') . "/assets/images/json/loader.json"; ?>"></div>
-        </div>
         <div class="viewport">
             <?php
                 global $wp;

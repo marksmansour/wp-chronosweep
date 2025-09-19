@@ -493,14 +493,6 @@ $(function () {
     $(window).scroll(browser.scrollEvent);
 });
 
-$(window).on('load', function () {
-    browser.scrollEvent();
-    setTimeout(function () {
-        $('#loaderSpinner').hide();
-    }, 500);
-
-});
-
 $(document).ready(function () {
     $(document).ajaxComplete(function () {
         if ($('body').hasClass('woocommerce-checkout') || $('body').hasClass('woocommerce-cart')) {

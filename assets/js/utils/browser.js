@@ -22,7 +22,6 @@ var browser = {
         this._height = $(window).height();
 
         if (init === 1) {
-            browser.loaderSpinner();
             browser.initWow();
             browser.msgWrap();
             if($('.wc-empty-cart-message')[0]){
@@ -110,17 +109,6 @@ var browser = {
             return default_;
         else
             return qs[1];
-    },
-    loaderSpinner: function(){
-		var file = $('.loaderSpinnerJson').attr('data-link');
-		var animate = bodymovin.loadAnimation({
-			container: document.getElementById('loaderSpinner'), // the dom element
-			renderer: 'svg',
-			loop: true,
-			autoplay: true,
-			path: file
-		});
-		animate.setSpeed(1.5);
     },
     testimonialsList: function() {
         if($('.testimonialsListSlider')[0]){

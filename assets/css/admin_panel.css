@@ -1,0 +1,77 @@
+:root{
+    --black: #000;
+    --white: #fff;
+    --primaryBlue: #002147;
+    --primaryBlue60: rgba(0, 33, 71, .6);
+    --primaryBlue30: rgba(0, 33, 71, .3);
+    --lightBlue: #EAF3FB;
+    --primaryBlack: #121212;
+    --primaryBlack50: rgba(18, 18, 18, .5);
+    --grey: #CCCCCC;
+    --lightWhite: #F1F1F1;
+    --red: #DD471E;
+    --mobileMenuBorder: #DDDDDD;
+    --lightBlack: #040404;
+    --logoBg: #032751;
+    --white50: rgba(255, 255, 255, .5);
+    --darkGrey: #0C0C0C;
+    --tabDeActive: #E1E1E1;
+    --tabItemBg: #EFF1F3;
+    --green: #5BB027;
+    --greyText: #575767;
+    --tabActiveBlue: #6490FF;
+}
+#woocommerce-product-images{
+    display: none;
+}
+.btnWrap{
+    position: relative;
+    display: inline-block;
+}
+.btnWrap .wpcf7-spinner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+.loadingBtn + .wpcf7-spinner{
+    visibility: visible;
+}
+.btnWrap .wpcf7-spinner {
+    visibility: hidden;
+    display: inline-block;
+    background-color: #23282d;
+    opacity: 0.75;
+    width: 24px;
+    height: 24px;
+    border: none;
+    border-radius: 100%;
+    padding: 0;
+    margin: 0 0;
+    position: relative;
+}
+.btnWrap .wpcf7-spinner::before {
+    content: '';
+    position: absolute;
+    background-color: #fbfbfc;
+    top: 4px;
+    left: 4px;
+    width: 6px;
+    height: 6px;
+    border: none;
+    border-radius: 100%;
+    transform-origin: 8px 8px;
+    animation-name: spin;
+    animation-duration: 1000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.loadingBtn{
+    opacity: .6;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+.liveDrawLink, .certificateLink{
+    width: 100%;
+} 

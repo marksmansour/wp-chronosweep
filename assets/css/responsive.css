@@ -1,0 +1,3696 @@
+@media (max-width: 1800px) {
+    /* Common Start */
+
+    /* Common End */
+    /* Header Start */
+
+    /* Header End */
+    /* Footer Start */
+
+    /* Footer End */
+    /* Banner Start */
+    .bottomTextBanner .textContent {
+        width: 58%;
+    }
+
+    /* Banner End */
+    /* Testimonials List Start */
+
+    /* Testimonials List End */
+    /* Full Width CTA Start */
+
+    /* Full Width CTA End */
+
+    /* Left Text Banner Start */
+
+    /* Left Text Banner End */
+
+    /* Sidebar With Accordion Start */
+
+    /* Sidebar With Accordion End */
+
+    /* 404 Start */
+
+    /* 404 End */
+
+    /* Donation Start */
+    .donationLogoCardStatic span {
+        width: 100%;
+        margin: auto;
+    }
+
+    /* Donation End */
+
+    /* Product Banner Start */
+
+    /* Product Banner End */
+}
+
+@media (max-width: 1728px) {
+
+    /* Common Start */
+    .size57 {
+        font-size: 50px;
+    }
+
+    .cEditor h1 {
+        font-size: 50px;
+    }
+
+    /* Common End */
+    /* Header Start */
+
+    /* Header End */
+    /* Footer Start */
+
+    /* Footer End */
+    /* Banner Start */
+
+    /* Banner End */
+    /* Testimonials List Start */
+
+    /* Testimonials List End */
+    /* Image And Text Start */
+
+    /* Image And Text End */
+    /* left Image And Right Text Start */
+
+    /* left Image And Right Text End */
+    /* Full Width CTA Start */
+
+    /* Full Width CTA End */
+    /* Left Text Banner Start */
+
+    /* Left Text Banner End */
+
+    /* Sidebar With Accordion Start */
+
+    /* Sidebar With Accordion End */
+
+    /* 404 Start */
+
+    /* 404 End */
+
+    /* Donation Start */
+
+    /* Donation End */
+
+    /* Product Banner Start */
+
+    /* Product Banner End */
+}
+
+@media (max-width: 1650px) {
+
+    /* Tab Section Start */
+    .single-product .tabSectionWrap,
+    .page-template-cart .tabSectionWrap {
+        width: 70%;
+    }
+
+    /* Tab Section End */
+}
+
+@media (max-width: 1600px) {
+
+    /* Common Start */
+    .size57 {
+        font-size: 50px;
+    }
+
+    .size36 {
+        font-size: 32px;
+    }
+
+    .size32 {
+        font-size: 30px;
+    }
+
+    .size45 {
+        font-size: 42px;
+    }
+
+    .size28 {
+        font-size: 26px;
+    }
+
+    .cEditor h1 {
+        font-size: 50px;
+    }
+
+    .cEditor h2 {
+        font-size: 42px;
+    }
+
+    .cEditor h3 {
+        font-size: 32px;
+    }
+
+    .cEditor h4 {
+        font-size: 30px;
+    }
+
+    /* Common End */
+    /* Header Start */
+    .headerWrap {
+        margin: 80px 60px 0 60px;
+    }
+    .home .headerWrap{
+        margin-top: 40px;
+    }
+    /* Header End */
+    /* Footer Start */
+    .footerTopWrap {
+        padding: 80px 100px;
+    }
+
+    .footerBottomWrap {
+        padding: 0 100px
+    }
+
+    /* Footer End */
+    /* Banner Start */
+    .bottomTextBanner .textContent {
+        margin-top: 500px;
+        width: 58%;
+    }
+
+    .textContentBottom {
+        padding: 80px 70px 70px 100px;
+    }
+
+    .textContentTop {
+        height: 80px;
+    }
+
+    /* Banner End */
+    /* Testimonials List Start */
+    .testimonialsListCardWrap {
+        padding: 70px 120px;
+    }
+
+    .leftSpaceYes .testimonialsListCard:first-child {
+        margin-left: 100px;
+    }
+
+    /* Testimonials List End */
+    /* Image And Text Start */
+    .imageWithTextColumnTextContent {
+        padding: 90px 100px;
+        margin-right: 230px;
+    }
+
+    .imageWithTextSmallText {
+        padding-bottom: 40px;
+    }
+
+    /* Image And Text End */
+    /* left Image And Right Text Start */
+    .leftImageAndRightText .imageColumnWrap {
+        padding: 0 100px;
+    }
+
+    .leftImageAndRightTextTextContentBlocks {
+        padding: 0 110px;
+    }
+
+    .leftImageAndRightText .logoImage {
+        width: 160px;
+    }
+
+    .leftImageAndRightTextLogoSlider {
+        margin-top: 60px;
+    }
+
+    .leftImageAndRightTextWrap {
+        padding: 60px 0;
+    }
+
+    .leftImageAndRightTextTextContentBlocks .textListItem {
+        padding: 28px;
+    }
+
+    .leftImageAndRightText.play_fair .textWithImageWrap {
+        bottom: -60px;
+    }
+
+    .leftImageAndRightText.play_fair .imageColumnWrap {
+        margin-right: 230px;
+    }
+
+    .leftImageAndRightText.play_fair .textContent {
+        padding-top: 100px;
+    }
+
+    .leftImageAndRightText.partners .imageWrap {
+        margin-left: -100px;
+        margin-top: -60px;
+    }
+
+    .leftImageAndRightText.partners .logoImage {
+        width: 180px;
+    }
+
+    .leftImageAndRightText.partners .leftImageAndRightTextLogoListBlocks {
+        row-gap: 36px;
+    }
+
+    .leftImageAndRightText.partners .leftImageAndRightTextLogoSlider {
+        margin-top: 36px;
+    }
+
+    /* left Image And Right Text End */
+    /* Full Width CTA Start */
+    .fullWidthCTA .textContentWrap {
+        padding: 110px 90px;
+    }
+
+    .fullWidthCTA .textContentText {
+        padding: 0 140px;
+    }
+
+    /* Full Width CTA End */
+    /* Left Text Banner Start */
+    .leftTextBannerWrap {
+        padding: 160px 60px 60px 60px;
+    }
+
+    .leftTextBannerWrap .textContent {
+        padding-top: 0;
+    }
+
+    .leftTextBannerWrap {
+        align-items: center;
+    }
+
+    /* Left Text Banner End */
+
+    /* Description Start */
+    .descriptionLeftTextContent {
+        padding: 70px 100px;
+    }
+
+    .descriptionRightTextContent {
+        padding-right: 120px;
+    }
+
+    /* Description End */
+
+    /* Gradient Background Start */
+    body.page-template-gradientbackground::after,
+    body.page-template-gradientbackground::before {
+        height: 540px;
+        width: 540px;
+    }
+
+    /* Gradient Background End */
+
+    /* Sidebar With Accordion Start */
+    .sidebarWithAccordionWrap {
+        padding: 160px 100px 60px 100px;
+    }
+
+    /* Sidebar With Accordion End */
+
+    /* 404 Start */
+
+    /* 404 End */
+
+    /* Donation Start */
+    .donationRow {
+        padding: 50px 100px;
+    }
+
+    .donationTextColumnHeader {
+        padding-right: 200px;
+    }
+
+    .donationLogoCardWrap a {
+        padding: 45px 50px;
+    }
+
+    .donationLogoCardWrap a {
+        font-size: 17px;
+    }
+
+    /* Donation End */
+
+    /* Product Banner Start */
+    .productBanner .productBannerTextContentWrap {
+        padding: 160px 100px 90px 100px;
+    }
+
+    .productCountdown {
+        margin: 36px;
+    }
+
+    .productGalleryBottom {
+        padding: 28px 36px;
+    }
+
+    .productBanner .textContentWrap {
+        padding-right: 120px;
+    }
+
+    /* Product Banner End */
+
+    /* Tab Section Start */
+    .tabSectionWrap {
+        padding: 40px 100px;
+    }
+
+    .checkOutForm #customer_details {
+        padding-right: 120px;
+    }
+
+    /* Tab Section End */
+    /* My Account Form Start */
+    .formRight {
+        padding: 70px 160px;
+    }
+
+    .formCenter {
+        width: 40%;
+    }
+
+    /* My Account Form End */
+
+    /* Past Winners Start */
+    .pastWinnersBody {
+        padding: 0 60px;
+    }
+
+    /* Past Winners End */
+}
+
+@media (max-width: 1550px) {
+
+    /* Common Start */
+    .size57 {
+        font-size: 45px;
+    }
+
+    .cEditor h1 {
+        font-size: 45px;
+    }
+
+    /* Common End */
+    /* Banner Start */
+    .bottomTextBanner .textContent {
+        margin-top: 450px;
+    }
+
+    /* Banner End */
+    /* Left Text Banner Start */
+    /* Left Text Banner End */
+}
+
+@media (max-width: 1500px) {
+    /* Common Start */
+
+    /* Common End */
+    /* Header Start */
+
+    /* Header End */
+    /* Footer Start */
+
+    /* Footer End */
+    /* Banner Start */
+
+    /* Banner End */
+    /* Testimonials List Start */
+
+    /* Testimonials List End */
+    /* Image And Text Start */
+
+    /* Image And Text End */
+    /* left Image And Right Text Start */
+
+    /* left Image And Right Text End */
+    /* Full Width CTA Start */
+
+    /* Full Width CTA End */
+    /* Left Text Banner Start */
+
+    /* Left Text Banner End */
+
+    /* Sidebar With Accordion Start */
+
+    /* Sidebar With Accordion End */
+
+    /* 404 Start */
+
+    /* 404 End */
+
+    /* Donation Start */
+
+    /* Donation End */
+
+    /* Product Banner Start */
+
+    /* Product Banner End */
+}
+
+@media (max-width: 1440px) {
+
+    /* Common Start */
+    .c {
+        padding: 0 80px;
+    }
+
+    .size57 {
+        font-size: 47px;
+    }
+
+    .size36 {
+        font-size: 28px;
+    }
+
+    .size32 {
+        font-size: 26px;
+    }
+
+    .size22 {
+        font-size: 20px;
+    }
+
+    .size45 {
+        font-size: 38px;
+    }
+
+    .size28 {
+        font-size: 24px;
+    }
+
+    .cEditor h1 {
+        font-size: 47px;
+    }
+
+    .cEditor h2 {
+        font-size: 38px;
+    }
+
+    .cEditor h3 {
+        font-size: 28px;
+    }
+
+    .cEditor h4 {
+        font-size: 26px;
+    }
+
+    .cEditor h5 {
+        font-size: 20px;
+    }
+
+    /* Common End */
+    /* Header Start */
+    .headerContainer {
+        padding: 0 80px;
+    }
+
+    .headerWrap {
+        margin: 80px 40px 0 40px;
+        padding: 10px 30px;
+    }
+
+    .mainMenuItem {
+        padding: 0 14px;
+    }
+
+    .rightMenuItem {
+        padding: 0 0 0 18px;
+    }
+
+    /* Header End */
+    /* Footer Start */
+    .footerContainer {
+        padding: 0 80px;
+    }
+
+    .footerLogo {
+        width: 130px;
+    }
+
+    .footerTopWrap {
+        padding: 70px 70px;
+    }
+
+    .footerBottomWrap {
+        padding: 0 70px;
+    }
+
+    .footerBottom {
+        padding: 24px 0;
+    }
+
+    .footerColumnBottomMenu {
+        column-gap: 14px;
+        row-gap: 8px;
+    }
+
+    /* Footer End */
+    /* Banner Start */
+    .bottomTextBanner .textContent {
+        margin-top: 400px;
+    }
+
+    .textContentBottom {
+        padding: 70px 60px 60px 70px;
+    }
+
+    .textContentTop {
+        height: 70px;
+    }
+
+    /* Banner End */
+    /* Testimonials List Start */
+    .testimonialLogoImage {
+        width: 110px;
+    }
+
+    .testimonialsListCardWrap {
+        padding: 60px 110px;
+    }
+
+    .testimonialLogo {
+        margin-top: 36px;
+    }
+
+    .leftSpaceYes .testimonialsListCard:first-child {
+        margin-left: 70px;
+    }
+
+    /* Testimonials List End */
+    /* Image And Text Start */
+    .imageWithTextColumnTextContent {
+        padding: 60px 70px;
+        margin-right: 210px;
+    }
+
+    .imageWithTextSmallText {
+        padding-bottom: 36px;
+    }
+
+    /* Image And Text End */
+    /* left Image And Right Text Start */
+    .leftImageAndRightText .imageColumnWrap {
+        padding: 0 70px;
+    }
+
+    .leftImageAndRightTextTextContentBlocks {
+        padding: 0 80px;
+    }
+
+    .leftImageAndRightText .logoImage {
+        width: 140px;
+    }
+
+    .leftImageAndRightTextLogoListBlocks {
+        row-gap: 100px;
+    }
+
+    .leftImageAndRightTextLogoSlider {
+        margin-top: 55px;
+    }
+
+    .leftImageAndRightTextWrap {
+        padding: 55px 0;
+    }
+
+    .leftImageAndRightTextTextContentBlocks .textListItem {
+        padding: 24px;
+    }
+
+    .leftImageAndRightText.play_fair .textWithImageWrap {
+        bottom: -55px;
+    }
+
+    .leftImageAndRightText.play_fair .imageColumnWrap {
+        margin-right: 210px;
+    }
+
+    .leftImageAndRightText.play_fair .textContent {
+        padding-top: 80px;
+    }
+
+    .leftImageAndRightText.partners .imageWrap {
+        margin-left: -70px;
+        margin-top: -55px;
+    }
+
+    .leftImageAndRightText.partners .logoImage {
+        width: 160px;
+    }
+
+    .leftImageAndRightText.partners .leftImageAndRightTextLogoListBlocks {
+        row-gap: 32px;
+    }
+
+    .leftImageAndRightText.partners .leftImageAndRightTextLogoSlider {
+        margin-top: 32px;
+    }
+
+    /* left Image And Right Text End */
+    /* Full Width CTA Start */
+    .fullWidthCTA .textContentWrap {
+        padding: 100px 80px;
+    }
+
+    .fullWidthCTA .textContentText {
+        padding: 0 130px;
+    }
+
+    /* Full Width CTA End */
+    /* Left Text Banner Start */
+    .leftTextBannerWrap {
+        padding: 160px 40px 40px 40px;
+    }
+
+    .leftTextBannerWrap .textContent {
+        padding-left: 30px;
+    }
+
+    /* Left Text Banner End */
+
+    /* Description Start */
+    .descriptionLeftTextContent {
+        padding: 60px 60px;
+    }
+
+    .descriptionRightTextContent {
+        padding-right: 100px;
+    }
+
+    /* Description End */
+
+    /* Gradient Background Start */
+    body.page-template-gradientbackground::after,
+    body.page-template-gradientbackground::before {
+        height: 500px;
+        width: 500px;
+    }
+
+    /* Gradient Background End */
+
+    /* Sidebar With Accordion Start */
+    .sidebarWithAccordionWrap {
+        padding: 160px 70px 40px 70px;
+    }
+
+    .myAccountDashBoard {
+        padding: 160px 0 60px 0;
+    }
+
+    /* Sidebar With Accordion End */
+
+    /* 404 Start */
+
+    /* 404 End */
+
+    /* Donation Start */
+    .donationRow {
+        padding: 50px 70px;
+    }
+
+    .donationTextColumnHeader {
+        padding-right: 160px;
+    }
+
+    .donationLogoCardWrap a {
+        padding: 40px 45px;
+    }
+
+    .donationLogoCardWrap a {
+        font-size: 16px;
+    }
+
+    /* Donation End */
+
+    /* Product Banner Start */
+    .productBanner .productBannerTextContentWrap {
+        padding: 220px 70px 80px 70px;
+    }
+
+    .productGalleryBottom {
+        padding: 24px 32px;
+    }
+
+    .productCountdown {
+        margin: 32px;
+    }
+
+    .productBanner .textContentWrap {
+        padding-right: 100px;
+    }
+
+    /* Product Banner End */
+
+    /* Tab Section Start */
+    .single-product .tabSectionWrap,
+    .page-template-cart .tabSectionWrap {
+        width: 75%;
+    }
+
+    .tabSectionWrap {
+        padding: 40px 70px;
+    }
+
+    .checkOutForm #customer_details {
+        padding-right: 0;
+    }
+
+    /* Tab Section End */
+    /* My Account Form Start */
+    .formRight {
+        padding: 60px 140px;
+    }
+
+    .formCenter {
+        width: 45%;
+    }
+
+    .contributedLogoSlider {
+        margin: 0 40px;
+    }
+
+    .padding40 {
+        padding: 32px;
+    }
+
+    /* My Account Form End */
+
+    /* Past Winners Start */
+    .pastWinnersBody {
+        padding: 0 40px;
+    }
+
+    /* Past Winners End */
+}
+
+@media (max-width: 1400px) {
+
+    /* Common Start */
+    .c {
+        padding: 0 60px;
+    }
+
+    .size57 {
+        font-size: 42px;
+    }
+
+    .size36 {
+        font-size: 26px;
+    }
+
+    .size32px {
+        font-size: 24px;
+    }
+
+    .size22 {
+        font-size: 18px;
+    }
+
+    .size45 {
+        font-size: 34px;
+    }
+
+    .cEditor h1 {
+        font-size: 42px;
+    }
+
+    .cEditor h2 {
+        font-size: 34px;
+    }
+
+    .cEditor h3 {
+        font-size: 26px;
+    }
+
+    .cEditor h4 {
+        font-size: 24px;
+    }
+
+    .cEditor h5 {
+        font-size: 18px;
+    }
+
+    /* Common End */
+    /* Header Start */
+    .headerContainer {
+        padding: 0 60px;
+    }
+
+    .headerWrap {
+        margin-top: 60px;
+    }
+
+    .rightMenuItem {
+        padding: 0 0 0 16px;
+    }
+
+    /* Header End */
+    /* Footer Start */
+    .footerContainer {
+        padding: 0 60px;
+    }
+
+    .footerLogo {
+        width: 120px;
+    }
+
+    .footerTopWrap {
+        padding: 60px 70px;
+    }
+
+    .footerBottom {
+        padding: 22px 0;
+    }
+
+    /* Footer End */
+    /* Banner Start */
+    .textContentBottom {
+        padding: 60px 50px 50px 70px;
+    }
+
+    .textContentTop {
+        height: 60px;
+    }
+
+    .bottomTextBanner,
+    .leftTextBanner {
+        margin-top: 30px;
+    }
+
+    /* Banner End */
+    /* Testimonials List Start */
+    .testimonialLogoImage {
+        width: 100px;
+    }
+
+    .testimonialsListCardWrap {
+        padding: 50px 100px;
+    }
+
+    .testimonialLogo {
+        margin-top: 32px;
+    }
+
+    /* Testimonials List End */
+    /* Image And Text Start */
+    .imageWithTextColumnTextContent {
+        margin-right: 190px;
+    }
+
+    .imageWithTextSmallText {
+        padding-bottom: 32px;
+    }
+
+    /* Image And Text End */
+    /* left Image And Right Text Start */
+    .leftImageAndRightText.play_fair .imageColumnWrap {
+        margin-right: 190px;
+    }
+
+    /* left Image And Right Text End */
+    /* Full Width CTA Start */
+    .fullWidthCTA .textContentWrap {
+        padding: 90px 70px;
+    }
+
+    .fullWidthCTA .textContentText {
+        padding: 0 120px;
+    }
+
+    /* Full Width CTA End */
+    /* Left Text Banner Start */
+    .leftTextBannerWrap {
+        padding: 140px 40px 40px 40px;
+    }
+
+    /* Left Text Banner End */
+
+    /* Description Start */
+    .descriptionLeftTextContent {
+        padding: 50px 70px;
+    }
+
+    .descriptionRightTextContent {
+        padding-right: 80px;
+    }
+
+    /* Description End */
+
+    /* Gradient Background Start */
+    body.page-template-gradientbackground::after,
+    body.page-template-gradientbackground::before {
+        height: 460px;
+        width: 460px;
+    }
+
+    /* Gradient Background End */
+
+    /* Sidebar With Accordion Start */
+    .sidebarWithAccordionWrap {
+        padding: 140px 70px 40px 70px;
+    }
+
+    .myAccountDashBoard {
+        padding: 140px 0 40px 0;
+    }
+
+    /* Sidebar With Accordion End */
+
+    /* 404 Start */
+
+    /* 404 End */
+
+    /* Donation Start */
+
+    /* Donation End */
+
+    /* Product Banner Start */
+    .productBanner .productBannerTextContentWrap {
+        padding: 200px 70px 70px 70px;
+    }
+
+    /* Product Banner End */
+
+    /* Popup Start */
+    .popupContent {
+        width: 90%;
+        top: 8%;
+    }
+
+    /* Popup End */
+
+    /* Tab Section Start */
+    .single-product .tabSectionWrap,
+    .page-template-cart .tabSectionWrap {
+        width: 80%;
+    }
+
+    .tabSection {
+        padding: 200px 0 80px 0;
+    }
+
+    /* Tab Section End */
+    /* My Account Form Start */
+    .formRight {
+        padding: 50px 120px;
+    }
+
+    /* My Account Form End */
+}
+
+@media (max-width: 1280px) {
+
+    /* Common Start */
+    .c {
+        padding: 0 40px;
+    }
+
+    .size57 {
+        font-size: 37px;
+    }
+
+    .size36 {
+        font-size: 24px;
+    }
+
+    .size32px {
+        font-size: 20px;
+    }
+
+    .size22 {
+        font-size: 16px;
+    }
+
+    .size45 {
+        font-size: 30px;
+    }
+
+    .cEditor h1 {
+        font-size: 37px;
+    }
+
+    .cEditor h2 {
+        font-size: 30px;
+    }
+
+    .cEditor h3 {
+        font-size: 24px;
+    }
+
+    .cEditor h4 {
+        font-size: 20px;
+    }
+
+    /* Common End */
+    /* Header Start */
+    .headerContainer {
+        padding: 0 40px;
+    }
+    /* Header End */
+    /* Footer Start */
+    .footerContainer {
+        padding: 0 40px;
+    }
+
+    .footerTopWrap {
+        padding: 50px 70px;
+    }
+
+    .footerBottom {
+        padding: 20px 0;
+    }
+
+    /* Footer End */
+    /* Banner Start */
+    .bottomTextBanner .textContent {
+        margin-top: 350px;
+    }
+
+    .textContentBottom {
+        padding: 50px 40px 40px 70px;
+    }
+
+    .textContentTop {
+        height: 50px;
+    }
+
+    .textContentTop::after,
+    .textContentBottom::after {
+        right: -24px;
+        width: 24px;
+        height: 24px;
+        background: radial-gradient(circle at top right, transparent 24px, var(--lightBlue) 24px);
+    }
+
+    .textContentTop::before {
+        top: -24px;
+        width: 24px;
+        height: 24px;
+        background: radial-gradient(circle at top right, transparent 24px, var(--lightBlue) 24px);
+    }
+
+    .textContentTop,
+    .textContentBottom {
+        border-top-right-radius: 24px;
+    }
+
+    .bottomTextBanner .bgimage,
+    .leftTextBanner .bgimage {
+        border-radius: 24px;
+    }
+
+    /* Banner End */
+    /* Testimonials List Start */
+    .testimonialLogoImage {
+        width: 90px;
+    }
+
+    .testimonialsListCardWrap {
+        padding: 40px 90px;
+    }
+
+    .testimonialLogo {
+        margin-top: 28px;
+    }
+
+    .testimonialsListCard {
+        border-radius: 24px;
+    }
+
+    /* Testimonials List End */
+    /* Image And Text Start */
+    .imageWithTextColumnTextContent {
+        margin-right: 170px;
+    }
+
+    .imageWithTextColumn.imageOnly .bgimage {
+        border-top-right-radius: 24px;
+        border-bottom-right-radius: 24px;
+    }
+
+    .imageWithTextColumn.textWithImage {
+        border-top-left-radius: 24px;
+        border-bottom-left-radius: 24px;
+    }
+
+    /* Image And Text End */
+    /* left Image And Right Text Start */
+    .leftImageAndRightTextLogoSlider {
+        margin-top: 50px;
+    }
+
+    .leftImageAndRightTextWrap {
+        padding: 50px 0;
+        border-radius: 24px;
+    }
+
+    .leftImageAndRightText.play_fair .textWithImageWrap {
+        bottom: -50px;
+    }
+
+    .leftImageAndRightText.play_fair .imageColumnWrap {
+        margin-right: 170px;
+    }
+
+    .leftImageAndRightText.play_fair .textContent {
+        padding-top: 60px;
+    }
+
+    .leftImageAndRightText.partners .imageWrap {
+        margin-top: -50px;
+    }
+
+    .leftImageAndRightText.partners .leftImageAndRightTextLogoListBlocks .leftImageAndRightTextCard {
+        width: 33.33%;
+    }
+
+    .leftImageAndRightText.partners .leftImageAndRightTextLogoListBlocks {
+        row-gap: 28px;
+        margin-top: 28px;
+    }
+
+    /* left Image And Right Text End */
+    /* Full Width CTA Start */
+    .fullWidthCTA .textContentWrap {
+        padding: 80px 60px;
+    }
+
+    .fullWidthCTA .textContentText {
+        padding: 0 110px;
+    }
+
+    .fullWidthCTAWrap {
+        border-radius: 24px;
+    }
+
+    /* Full Width CTA End */
+    /* Left Text Banner Start */
+    .leftTextBannerWrap .bannerLeftLayer::after {
+        bottom: -24px;
+        width: 24px;
+        height: 24px;
+        background: radial-gradient(circle at bottom right, transparent 24px, var(--white) 24px);
+    }
+
+    .leftTextBannerWrap .bannerLeftLayer::before {
+        width: 24px;
+        height: 24px;
+        background: radial-gradient(circle at bottom right, transparent 24px, var(--white) 24px);
+    }
+
+    .leftTextBannerWrap .bannerLeftLayer {
+        border-bottom-right-radius: 24px;
+    }
+
+    .leftTextBannerWrap .textContent {
+        padding-top: 0;
+    }
+
+    .leftTextBannerWrap {
+        align-items: center;
+    }
+
+    .leftTextBanner .bannerWrap {
+        border-radius: 24px;
+    }
+
+    /* Left Text Banner End */
+
+    /* Description Start */
+    .descriptionLeftTextContent {
+        padding: 40px 65px;
+        border-radius: 24px;
+    }
+
+    .descriptionRightTextContent {
+        padding-right: 60px;
+    }
+
+    /* Description End */
+
+    /* Gradient Background Start */
+    body.page-template-gradientbackground::after,
+    body.page-template-gradientbackground::before {
+        height: 420px;
+        width: 420px;
+    }
+
+    /* Gradient Background End */
+
+    /* Sidebar With Accordion Start */
+    .sidebarWithAccordionWrap {
+        border-radius: 24px;
+    }
+
+    /* Sidebar With Accordion End */
+
+    /* 404 Start */
+
+    /* 404 End */
+
+    /* Donation Start */
+    .donationTextColumnHeader {
+        padding-right: 120px;
+    }
+
+    .donationWrap {
+        border-radius: 24px;
+    }
+
+    .donationLogoCardWrap a {
+        padding: 35px 40px;
+    }
+
+    .donationLogoCardWrap a {
+        font-size: 15px;
+    }
+
+    /* Donation End */
+
+    /* Product Banner Start */
+    .productBanner .productBannerTextContentWrap {
+        padding: 160px 70px 70px 70px;
+    }
+
+    .productBanner .textContentWrap {
+        padding-right: 80px;
+    }
+
+    /* Product Banner End */
+
+    /* Tab Section Start */
+
+    /* Tab Section End */
+    /* My Account Form Start */
+    .formRight {
+        padding: 40px 100px;
+    }
+
+    .formCenter {
+        width: 50%;
+    }
+
+    .referId {
+        font-size: 20px;
+        padding: 24px 24px;
+        background: var(--lightBlue);
+    }
+
+    .padding40 {
+        padding: 24px;
+    }
+
+    .referId {
+        padding: 12px;
+    }
+
+    .titleContent {
+        padding: 32px 32px 24px 32px;
+    }
+
+    .referId+button {
+        padding: 24px;
+    }
+
+    .tabContent .btnWrap a {
+        left: 15%;
+    }
+
+    /* My Account Form End */
+
+    /* Past Winners Start */
+    .pastWinnersBody {
+        padding: 0 0;
+    }
+
+    .instaPopup .popupContent {
+        width: 300px;
+    }
+
+    /* Past Winners End */
+
+    /* Account Create Popup Start */
+    .accountCreatePopup .popupContent {
+        width: 50%;
+    }
+
+    /* Account Create Popup End */
+}
+
+@media (max-width: 1200px) {
+
+    /* Common Start */
+    .size57 {
+        font-size: 32px;
+    }
+
+    .size45 {
+        font-size: 28px;
+    }
+
+    .cEditor h1 {
+        font-size: 32px;
+    }
+
+    .cEditor h2 {
+        font-size: 28px;
+    }
+
+    /* Common End */
+    /* Header Start */
+    .headerContainer {
+        padding: 0 20px;
+    }
+
+    .headerWrap {
+        padding: 10px 25px;
+    }
+
+    .mainMenuItem {
+        padding: 0 12px;
+    }
+
+    .rightMenuItem {
+        padding: 0 0 0 14px;
+    }
+
+    .headerWrap {
+        margin: 60px 30px 0 30px;
+    }
+
+    /* Header End */
+    /* Footer Start */
+    .footerColumnBottomMenu {
+        column-gap: 12px;
+        row-gap: 8px;
+    }
+
+    .footerForm {
+        padding-top: 30px;
+    }
+
+    .formInput {
+        padding: 8px;
+    }
+
+    .footerCartIcon {
+        width: 90%;
+    }
+
+    .footerBottomWrap {
+        padding: 0 55px;
+    }
+
+    .footerTopWrap {
+        padding: 50px 55px;
+    }
+
+    .footerBottomColumn1 {
+        width: 25.75%;
+    }
+
+    .footerBottomColumn2 {
+        width: 45.41%;
+    }
+
+    /* Footer End */
+    /* Banner Start */
+    .bottomTextBanner .textContent {
+        margin-top: 300px;
+    }
+
+    .textContentBottom {
+        padding: 40px 30px 30px 55px;
+    }
+
+    .textContentTop::after,
+    .textContentBottom::after {
+        right: -20px;
+        width: 20px;
+        height: 20px;
+        background: radial-gradient(circle at top right, transparent 20px, var(--lightBlue) 20px);
+    }
+
+    .textContentTop::before {
+        top: -20px;
+        width: 20px;
+        height: 20px;
+        background: radial-gradient(circle at top right, transparent 20px, var(--lightBlue) 20px);
+    }
+
+    .textContentTop,
+    .textContentBottom {
+        border-top-right-radius: 20px;
+    }
+
+    .bottomTextBanner .bgimage,
+    .leftTextBanner .bgimage {
+        border-radius: 20px;
+    }
+
+    /* Banner End */
+    /* Testimonials List Start */
+    .testimonialsListCardWrap {
+        padding: 40px 80px;
+    }
+
+    .testimonialLogo {
+        margin-top: 26px;
+    }
+
+    .leftSpaceYes .testimonialsListCard:first-child {
+        margin-left: 55px;
+    }
+
+    /* Testimonials List End */
+    /* Image And Text Start */
+    .imageWithTextColumnTextContent {
+        margin-right: 150px;
+        padding: 40px 55px;
+    }
+
+    .imageWithTextSmallText {
+        padding-bottom: 28px;
+    }
+
+    /* Image And Text End */
+    /* left Image And Right Text Start */
+    .leftImageAndRightText .imageColumnWrap {
+        padding: 0 55px;
+    }
+
+    .leftImageAndRightTextTextContentBlocks {
+        padding: 0 60px;
+    }
+
+    .leftImageAndRightText .logoImage {
+        width: 120px;
+    }
+
+    .leftImageAndRightTextLogoListBlocks {
+        row-gap: 80px;
+    }
+
+    .leftImageAndRightTextLogoSlider {
+        margin-top: 45px;
+    }
+
+    .leftImageAndRightTextWrap {
+        padding: 45px 0;
+    }
+
+    .leftImageAndRightText.play_fair .textWithImageWrap {
+        bottom: -45px;
+    }
+
+    .leftImageAndRightText.play_fair .imageColumnWrap {
+        margin-right: 150px;
+    }
+
+    .leftImageAndRightText.play_fair .textContent {
+        padding-top: 50px;
+    }
+
+    .leftImageAndRightText.partners .imageWrap {
+        margin-left: -55px;
+        margin-top: -45px;
+    }
+
+    .leftImageAndRightText.partners .logoImage {
+        width: 140px;
+    }
+
+    /* left Image And Right Text End */
+    /* Full Width CTA Start */
+    .fullWidthCTA .textContentWrap {
+        padding: 70px 50px;
+    }
+
+    .fullWidthCTA .textContentText {
+        padding: 0 100px;
+    }
+
+    /* Full Width CTA End */
+    /* Left Text Banner Start */
+    .leftTextBannerWrap .bannerLeftLayer::after {
+        bottom: -20px;
+        width: 20px;
+        height: 20px;
+        background: radial-gradient(circle at bottom right, transparent 20px, var(--white) 20px);
+    }
+
+    .leftTextBannerWrap .bannerLeftLayer::before {
+        width: 20px;
+        height: 20px;
+        background: radial-gradient(circle at bottom right, transparent 20px, var(--white) 20px);
+    }
+
+    .leftTextBannerWrap .bannerLeftLayer {
+        border-bottom-right-radius: 20px;
+    }
+
+    .leftTextBannerWrap {
+        padding: 140px 30px 30px 30px;
+    }
+
+    .leftTextBannerWrap .textContent {
+        padding-left: 25px;
+    }
+
+    .leftTextBanner .bannerWrap {
+        border-radius: 20px;
+    }
+
+    /* Left Text Banner End */
+
+    /* Description Start */
+    .descriptionLeftTextContent {
+        padding: 40px 55px;
+    }
+
+    .descriptionRightTextContent {
+        padding-right: 40px;
+    }
+
+    /* Description End */
+
+    /* Gradient Background Start */
+    body.page-template-gradientbackground::after,
+    body.page-template-gradientbackground::before {
+        height: 380px;
+        width: 380px;
+    }
+
+    /* Gradient Background End */
+
+    /* Sidebar With Accordion Start */
+    .sidebarWithAccordionWrap {
+        padding: 140px 55px 40px 55px;
+    }
+
+    .myAccountDashBoard {
+        padding: 140px 0 40px 0;
+    }
+
+    .sideBar {
+        /* Overwrite JS Code */
+        width: 300px !important;
+    }
+
+    /* Sidebar With Accordion End */
+
+    /* 404 Start */
+
+    /* 404 End */
+
+    /* Donation Start */
+    .donationRow {
+        padding: 40px 55px;
+    }
+
+    .donationTextColumnHeader {
+        padding-right: 80px;
+    }
+
+    .donationLogoCardWrap a {
+        padding: 30px 35px;
+    }
+
+    .donationLogoCardWrap a {
+        font-size: 14px;
+    }
+
+    /* Donation End */
+
+    /* Product Banner Start */
+    .productBanner .productBannerTextContentWrap {
+        padding: 160px 55px 60px 55px;
+    }
+
+    .productBanner .textContentWrap {
+        padding-right: 60px;
+    }
+
+    /* Product Banner End */
+
+    /* Tab Section Start */
+    .single-product .tabSectionWrap,
+    .page-template-cart .tabSectionWrap {
+        width: 85%;
+    }
+
+    .tabSectionWrap {
+        padding: 40px 55px;
+    }
+
+    /* Tab Section End */
+    /* Past Winners Start */
+    .pastWinnersCardListItemWrap .textDiv,
+    .pastWinnersCardListItemWrap .imageDiv {
+        width: 100%;
+    }
+
+    .pastWinnersCardListItemWrap {
+        flex-direction: column;
+    }
+
+    .pastWinnersCardListItem .textDiv {
+        padding-left: 0;
+    }
+
+    .pastWinnersCardListItemWrap {
+        row-gap: 16px;
+    }
+
+    .sliderImage .sizer {
+        padding-top: 71.94%;
+    }
+
+    /* Past Winners End */
+}
+
+@media (max-width: 1050px) {
+
+    /* Header Start */
+    .mainMenuItem {
+        padding: 0 10px;
+    }
+
+    .rightMenuItem {
+        padding: 0 0 0 12px;
+    }
+
+    /* Header End */
+    /* Footer Start */
+    .footerColumnBottomMenu {
+        column-gap: 10px;
+        row-gap: 8px;
+    }
+
+    /* Footer End */
+
+    /* Past Winners Start */
+    .pastWinnersBody {
+        padding: 0;
+    }
+
+    /* Past Winners End */
+}
+
+@media (max-width: 1024px) {
+
+    /* Common Start */
+    .c {
+        padding: 0 24px;
+    }
+
+    .jq-toast-wrap.top-right {
+        top: 140px;
+    }
+
+    /* Common End */
+    /* Header Start */
+    .header .c {
+        padding: 0;
+    }
+
+    .headerContainer {
+        padding: 0;
+    }
+
+    .headerWrap {
+        border-radius: 0;
+        padding: 10px 24px;
+        margin: 0;
+    }
+
+    .mainMenuItem {
+        padding: 0 10px;
+    }
+
+    .home .headerWrap {
+        margin-top: 0;
+    }
+
+    /* Header End */
+    /* Footer Start */
+    .footerContainer {
+        padding: 0 24px;
+    }
+
+    .footerColumnBottomMenu {
+        column-gap: 10px;
+        row-gap: 8px;
+    }
+
+    .footerTopWrap {
+        padding: 40px 0;
+    }
+
+    .footerBottomWrap {
+        padding: 0;
+    }
+
+    /* Footer End */
+    /* Banner Start */
+    .textContentTop::after,
+    .textContentBottom::after {
+        right: -16px;
+        width: 16px;
+        height: 16px;
+        background: radial-gradient(circle at top right, transparent 16px, var(--lightBlue) 16px);
+    }
+
+    .textContentTop::before {
+        top: -16px;
+        width: 16px;
+        height: 16px;
+        background: radial-gradient(circle at top right, transparent 16px, var(--lightBlue) 16px);
+    }
+
+    .textContentTop,
+    .textContentBottom {
+        border-top-right-radius: 16px;
+    }
+
+    .bottomTextBanner .bgimage,
+    .leftTextBanner .bgimage {
+        border-radius: 16px;
+    }
+
+    .bottomTextBanner.c {
+        padding: 0;
+    }
+
+    .bottomTextBanner,
+    .leftTextBanner {
+        margin-top: 82px;
+    }
+
+    .bottomTextBanner .bgimage,
+    .leftTextBanner .bgimage {
+        border-radius: 0;
+    }
+
+    .bottomTextBanner .textContent {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .textContentTop {
+        display: none;
+    }
+
+    .bottomTextBanner .bannerBackgroundImage {
+        position: relative;
+    }
+
+    .bottomTextBanner .bannerBackgroundImage .sizer {
+        padding-top: 70%;
+    }
+
+    .textContentBottom {
+        padding: 24px;
+        padding-bottom: 0;
+    }
+
+    /* Banner End */
+    /* Testimonials List Start */
+    .testimonialName {
+        margin-top: 20px;
+    }
+
+    .testimonialLogo {
+        margin-top: 22px;
+    }
+
+    .testimonialsListCard {
+        border-radius: 16px;
+    }
+
+    .leftSpaceYes .testimonialsListCard:first-child {
+        margin-left: 0;
+    }
+
+    /* Testimonials List End */
+    /* Image And Text Start */
+    .imageWithTextColumnTextContent {
+        margin-right: 0;
+        padding: 40px 55px;
+    }
+
+    .imageWithTextColumn.imageOnly .bgimage {
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+    }
+
+    .imageWithTextColumn.textWithImage {
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+    }
+
+    .imageWithTextSmallText {
+        padding-bottom: 24px;
+    }
+
+    /* Image And Text End */
+    /* left Image And Right Text Start */
+    .leftImageAndRightText .imageColumnWrap {
+        padding: 0 55px;
+    }
+
+    .leftImageAndRightTextTextContentBlocks {
+        padding: 0 40px;
+    }
+
+    .leftImageAndRightText.donate .leftImageAndRightTextLogoListBlocks .leftImageAndRightTextCard {
+        /* Overwrite JS Code */
+        width: 50% !important;
+        margin-right: 0 !important;
+    }
+
+    .leftImageAndRightTextLogoSlider {
+        margin-top: 40px;
+    }
+
+    .leftImageAndRightTextWrap {
+        padding: 40px 0;
+        border-radius: 16px;
+    }
+
+    .leftImageAndRightText.play_fair .textWithImageWrap {
+        bottom: -40px;
+    }
+
+    .leftImageAndRightText.play_fair .imageColumnWrap {
+        margin-right: 0;
+    }
+
+    .leftImageAndRightText.play_fair .textContent {
+        padding-top: 40px;
+    }
+
+    .leftImageAndRightText.play_fair .textContent {
+        gap: 16px;
+    }
+
+    .leftImageAndRightText.partners .imageWrap {
+        margin-top: -40px;
+    }
+
+    /* left Image And Right Text End */
+    /* Full Width CTA Start */
+    .fullWidthCTA .textContentWrap {
+        padding: 60px 40px;
+    }
+
+    .fullWidthCTA .textContentText {
+        padding: 0 90px;
+    }
+
+    .fullWidthCTAWrap {
+        border-radius: 16px;
+    }
+
+    /* Full Width CTA End */
+    /* Left Text Banner Start */
+    .leftTextBannerWrap .bannerLeftLayer::after {
+        bottom: -16px;
+        width: 16px;
+        height: 16px;
+        background: radial-gradient(circle at bottom right, transparent 16px, var(--white) 16px);
+    }
+
+    .leftTextBannerWrap .bannerLeftLayer::before {
+        width: 16px;
+        height: 16px;
+        background: radial-gradient(circle at bottom right, transparent 16px, var(--white) 16px);
+    }
+
+    .leftTextBannerWrap .bannerLeftLayer {
+        border-bottom-right-radius: 16px;
+    }
+
+    .leftTextBanner .bannerWrap {
+        background: transparent;
+    }
+
+    .bannerLeftLayer {
+        display: none;
+    }
+
+    .leftTextBannerWrap {
+        padding: 0;
+    }
+
+    .banner.leftTextBanner.c {
+        padding: 0;
+    }
+
+    .leftTextBannerWrap {
+        flex-direction: column;
+    }
+
+    .leftTextBannerWrap .imageContent,
+    .leftTextBannerWrap .textContent {
+        width: 100%;
+    }
+
+    .leftTextBannerWrap .textContent {
+        padding: 24px 24px 0 24px;
+        order: 2;
+    }
+
+    .leftTextBannerWrap .imageContentWrap .sizer {
+        padding-top: 70%;
+    }
+
+    .leftTextBanner .bgimage {
+        background-position-y: top;
+    }
+
+    /* Left Text Banner End */
+
+    /* Description Start */
+    .descriptionLeftTextContent {
+        border-radius: 16px;
+    }
+
+    .descriptionRightTextContent {
+        padding-right: 0;
+        padding-left: 16px;
+    }
+
+    /* Description End */
+
+    /* Gradient Background Start */
+    body.page-template-gradientbackground::after,
+    body.page-template-gradientbackground::before {
+        all: unset;
+    }
+
+    /* Gradient Background End */
+
+    /* Sidebar With Accordion Start */
+    .sidebarWithAccordion .c {
+        padding: 0;
+    }
+
+    .sidebarWithAccordionWrap {
+        padding: 80px 24px 40px 24px;
+    }
+
+    .myAccountDashBoard {
+        padding: 42px 0 0px 0;
+    }
+
+    .sideBar {
+        /* Overwrite JS Code */
+        width: 280px !important;
+    }
+
+    .sidebarWithAccordionWrap {
+        border-radius: 0;
+    }
+
+    .sidebarWithAccordionHeader {
+        padding-top: 30px;
+    }
+
+    /* Sidebar With Accordion End */
+
+    /* 404 Start */
+    .error404 .leftTextBanner .bannerWrap {
+        background: var(--white);
+        border-radius: 0;
+    }
+
+    .error404 .banner {
+        margin-bottom: 0;
+    }
+
+    .notFound {
+        padding: 120px 50px 120px 50px;
+    }
+
+    .errorPage h1 {
+        font-size: 250px;
+    }
+
+    .errorPage p {
+        font-size: 60px;
+    }
+
+    /* 404 End */
+
+    /* Donation Start */
+    .donationRow {
+        padding: 40px 55px;
+    }
+
+    .donationTextColumnHeader {
+        padding-right: 40px;
+    }
+
+    .donationTextColumn {
+        padding-right: 16px;
+    }
+
+    .donationWrap {
+        border-radius: 16px;
+    }
+
+    .donationLogolistWrap {
+        row-gap: 16px;
+        margin: 0 -6px;
+    }
+
+    .donationLogolist .donationLogoCard .donationLogoCardWrap {
+        padding: 0 6px;
+    }
+
+    .donationLogoCardWrap a {
+        padding: 25px 30px;
+    }
+
+    .donationLogoCardWrap a {
+        font-size: 13px;
+    }
+
+    .donationTextColumnHeader {
+        gap: 16px;
+    }
+
+    /* Donation End */
+
+    /* Product Banner Start */
+    .productBanner .productBannerTextContentWrap {
+        padding: 120px 0 80px 0;
+    }
+
+    .productBanner .textContentWrap {
+        padding-right: 40px;
+    }
+
+    /* Product Banner End */
+
+    /* Popup Start */
+    .popupContent {
+        width: 90%;
+        top: 3%;
+        height: 95vh;
+    }
+
+    /* Popup End */
+
+    /* Tab Section Start */
+    .single-product .tabSectionWrap,
+    .page-template-cart .tabSectionWrap,
+    .page-template-checkout .tabSectionWrap,
+    .page-template-myaccount .tabSectionWrap,
+    .myAccountDashBoard .myAccountDashBoardWrap {
+        width: 100%;
+        max-width: unset;
+    }
+
+    .tabSection {
+        padding: 82px 0 60px 0;
+    }
+
+    .single-product .content .c {
+        padding: 0;
+    }
+
+    .tabSectionWrap {
+        border-radius: 0;
+    }
+
+    .tabSectionWrap {
+        padding: 40px 24px;
+    }
+
+    .ticketsWrap {
+        row-gap: 16px;
+        margin: 0 -8px;
+    }
+
+    .ticketsWrap .ticketItem {
+        padding: 0 8px;
+    }
+
+    .woocommerce-cart .cartTab .shopTable .productTextContent {
+        padding-left: 16px;
+    }
+
+    .page-template-cart .woocommerce .c {
+        padding: 0;
+    }
+
+    .thankYouWrap {
+        padding: 40px 0;
+    }
+
+    .thankYouFooter {
+        padding-top: 60px;
+    }
+
+    /* Tab Section End */
+    /* My Account Form Start */
+    .formRight {
+        padding: 40px 80px;
+    }
+
+    .page-template-myaccount .woocommerce .c {
+        padding: 0;
+    }
+
+    .myAccountForm.tabSection {
+        padding: 42px 0 0 0;
+        min-height: auto;
+    }
+
+    .page-template-myaccount .section:first-child {
+        padding-bottom: 0;
+    }
+
+    .formCenter {
+        width: 100%;
+        padding: 40px 24px;
+    }
+
+    .errorMsgYes .lost_reset_password .customInputStyle::after {
+        right: 15px;
+    }
+
+    .titleContent {
+        padding: 24px 24px 16px 24px;
+    }
+
+    .myAccountDashBoard .textContent {
+        padding: 0 24px 16px 24px;
+    }
+
+    .tabContent {
+        padding: 16px 24px;
+    }
+
+    .cardCol {
+        padding: 0 8px;
+    }
+
+    .cardColRow {
+        margin: 0 -8px;
+    }
+
+    .myAccountDashBoardWrap {
+        row-gap: 16px;
+    }
+
+    .pb40 {
+        padding-bottom: 32px;
+    }
+
+    .pt60 {
+        padding-top: 40px;
+    }
+
+    .referId+button {
+        padding: 16px;
+    }
+
+    .cardRadius24 {
+        border-radius: 16px;
+    }
+
+    .referId {
+        font-size: 16px;
+    }
+
+    .myAccountDashBoard .myAccountDashBoardWrap {
+        padding: 32px 24px;
+    }
+
+    /* My Account Form End */
+
+    /* Past Winners Start */
+    .pastWinners .c {
+        padding: 0;
+    }
+
+    .rowGap24 {
+        row-gap: 16px;
+    }
+
+    /* Past Winners End */
+
+    /* Account Create Popup Start */
+    .accountCreatePopup .popupContent {
+        width: 50%;
+    }
+
+    .inlineDisplayCol50 {
+        width: 100%;
+        padding-bottom: 16px;
+    }
+
+    .inlineDisplayCol50:last-child {
+        padding-bottom: 0;
+    }
+
+    .accountCreatePopupForm {
+        row-gap: 16px;
+    }
+
+    /* Account Create Popup End */
+    /* Nav Tabs Start */
+
+    .navTabList {
+        background: var(--white);
+        padding: 20px 20px 0px;
+    }
+
+    /* Nav Tabs End */
+}
+
+@media (max-width: 900px) {
+
+    /* Common Start */
+    html #wpadminbar {
+        display: none;
+    }
+
+    html {
+        margin-top: 0 !important;
+    }
+
+    .btn {
+        display: block;
+        text-align: center;
+        padding: 12px 15px;
+    }
+
+    /* Common End */
+    /* Header Start */
+    .headerLogo {
+        width: 60px;
+    }
+
+    .header .logoImage {
+        display: none;
+    }
+
+    .mobileLogoImage {
+        display: block;
+    }
+
+    .headerWrap {
+        padding: 15px 24px;
+    }
+
+    .rightMenuItem:not(.cartMenuItem) {
+        display: none;
+    }
+
+    .cartMenuItem {
+        padding: 0;
+    }
+
+    .mobileMenuContainer {
+        display: block;
+    }
+
+    .mainMenuItem:not(.mobileNavBtn) {
+        display: none;
+    }
+
+    .mobileNavBtn {
+        display: block;
+    }
+
+    .menuCloseIcon {
+        display: none;
+    }
+
+    .logged-in:not(.logged-in.woocommerce-account) .mainMenuWrap {
+        display: block;
+    }
+
+    .logged-in:not(.logged-in.woocommerce-account) .rightMenuWrap .rightMenuItem:last-child:not(.cartIconMenu.active) {
+        display: none;
+    }
+
+    .cartIconMenu.active {
+        display: block;
+    }
+
+    .rightMenuWrap {
+        gap: 8px;
+    }
+
+    /* Header End */
+    /* Footer Start */
+    .footerColumn1 {
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+        margin-bottom: 24px;
+    }
+
+    .footerColumn3 {
+        order: 3;
+    }
+
+    .footerColumn2 {
+        order: 2;
+    }
+
+    .footerColumn2,
+    .footerColumn3 {
+        width: 50%;
+        padding-right: 0;
+        margin-top: 40px;
+    }
+
+    .footerColumn4 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer .formInputWrap {
+        width: 100%;
+    }
+
+    .footerForm {
+        padding-top: 24px;
+    }
+
+    .footerBottomColumn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footerBottomWrap {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .footerCartIcon {
+        max-width: 304px;
+        width: 100%;
+    }
+
+    .footerColumnBottomMenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .footerBottomColumn2 {
+        order: 3;
+    }
+
+    .footerBottom {
+        padding: 24px 0 80px 0;
+    }
+
+    .footerMenuItem {
+        margin: auto;
+    }
+
+    .footerLogo {
+        width: 110px;
+    }
+
+    .woocommerce .footerLogo img,
+    .woocommerce-page .footerLogo img {
+        width: 70px;
+    }
+
+    .footerTextContent p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    /* Footer End */
+    /* Banner Start */
+    .bottomTextBanner,
+    .leftTextBanner {
+        margin-top: 72px;
+    }
+
+    /* Banner End */
+    /* Testimonials List Start */
+    .testimonialsListCardWrap {
+        padding: 40px 70px;
+    }
+
+    .testimonialLogo {
+        margin-top: 20px;
+    }
+
+    /* Testimonials List End */
+    /* Image And Text Start */
+    .imageWithTextSmallText {
+        padding-bottom: 20px;
+    }
+
+    /* Image And Text End */
+    /* left Image And Right Text Start */
+    .leftImageAndRightText .imageColumnWrap {
+        padding: 0 32px;
+    }
+
+    .leftImageAndRightTextTextContentBlocks {
+        padding: 0 32px;
+    }
+
+    .leftImageAndRightTextLogoListBlocks {
+        row-gap: 60px;
+    }
+
+    .leftImageAndRightTextLogoSlider {
+        margin-top: 36px;
+    }
+
+    .leftImageAndRightTextWrap {
+        padding: 36px 0;
+    }
+
+    .leftImageAndRightText.play_fair .textWithImageWrap {
+        bottom: -36px;
+    }
+
+    .leftImageAndRightText.partners .imageWrap {
+        margin-top: -36px;
+        margin-left: -32px;
+    }
+
+    .leftImageAndRightText.partners .leftImageAndRightTextLogoListBlocks .leftImageAndRightTextCard {
+        width: 50%;
+    }
+
+    /* left Image And Right Text End */
+    /* Full Width CTA Start */
+    .fullWidthCTA .textContent .btnWrap .btn {
+        display: inline-block;
+        width: auto;
+    }
+
+    /* Full Width CTA End */
+    /* Left Text Banner Start */
+
+    /* Left Text Banner End */
+
+    /* Description Start */
+    .descriptionLeftTextContent {
+        padding: 32px;
+    }
+
+    /* Description End */
+
+    /* Sidebar With Accordion Start */
+
+    /* Sidebar With Accordion End */
+
+    /* 404 Start */
+    .notFound {
+        padding: 100px 50px 100px 50px;
+    }
+
+    .errorPage h1 {
+        font-size: 200px;
+    }
+
+    .errorPage p {
+        font-size: 50px;
+    }
+
+    /* 404 End */
+
+    /* Donation Start */
+    .donationRow {
+        padding: 40px 32px;
+    }
+
+    /* Donation End */
+
+    /* Product Banner Start */
+    .productBanner .textContentWrap {
+        padding-right: 24px;
+    }
+
+    /* Product Banner End */
+
+    /* Tab Section Start */
+    .tabSection {
+        padding: 72px 0 40px 0;
+    }
+
+    .tabSectionWrap {
+        padding: 40px 32px;
+    }
+
+    /* Tab Section End */
+    /* My Account Form Start */
+    .myAccountForm.tabSection {
+        padding: 32px 0 0 0;
+        min-height: auto;
+    }
+
+    /* My Account Form End */
+}
+
+@media (max-width: 840px) {
+
+    /* Common Start */
+    .size57 {
+        font-size: 28px;
+    }
+
+    .size18 {
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 32px 0;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .jq-toast-wrap.top-right {
+        top: 82px;
+    }
+
+    /* Common End */
+    /* Header Start */
+    .profileMenu:not(.mobileMenuContainer .profileMenu) {
+        display: none;
+    }
+
+    /* Header End */
+    /* Footer Start */
+
+    /* Footer End */
+    /* Banner Start */
+
+    /* Banner End */
+    /* Testimonials List Start */
+    .testimonialsListCardWrap {
+        padding: 32px;
+        text-align: left;
+    }
+
+    .testimonialLogo {
+        justify-content: start;
+    }
+
+    .testimonialName {
+        margin-top: 16px;
+    }
+
+    .testimonialLogo {
+        margin-top: 16px;
+    }
+
+    /* Testimonials List End */
+    /* Image And Text Start */
+    .imageWithTextColumnTextContent {
+        margin-right: 0;
+        padding: 32px;
+        gap: 16px;
+    }
+
+    .imageWithTextColumn.textWithImage,
+    .imageWithTextColumn.imageOnly {
+        width: 100%;
+    }
+
+    .imageWithTextWrap {
+        flex-direction: column;
+    }
+
+    .imageWithTextColumn.textWithImage {
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 16px;
+    }
+
+    .textWithImageWrap .bgimage {
+        border-bottom-left-radius: 0;
+    }
+
+    .imageWithTextColumn.imageOnly .bgimage {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 16px;
+    }
+
+    .textWithImageWrap {
+        display: none;
+    }
+
+    .imageWithTextColumnWrap .sizer {
+        padding-top: 84.79%;
+    }
+
+    .imageWithTextMainText {
+        line-height: 1.3;
+    }
+
+    .imageWithTextSmallText {
+        padding-bottom: 0;
+    }
+
+    /* Image And Text End */
+    /* left Image And Right Text Start */
+    .leftImageAndRightText .imageColumnWrap {
+        padding: 0 32px;
+    }
+
+    .leftImageAndRightTextColumn.imageColumn,
+    .leftImageAndRightTextColumn.textColumn {
+        width: 100%;
+        border: none;
+    }
+
+    .leftImageAndRightTextWrap {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .leftImageAndRightTextTextContentBlocks,
+    .leftImageAndRightText .imageColumnWrap {
+        padding: 0;
+    }
+
+    .leftImageAndRightTextTextContentBlocks {
+        flex-direction: row;
+        width: 100%;
+        gap: 0;
+    }
+
+    .leftImageAndRightText.donate .leftImageAndRightTextLogoListBlocks .leftImageAndRightTextCard {
+        width: 100%;
+        padding: 0;
+    }
+
+    .leftImageAndRightTextLogoListBlocks {
+        flex-wrap: unset;
+        margin: 0;
+    }
+
+    .leftImageAndRightTextWrap.whiteBg {
+        background: transparent;
+        overflow: visible;
+    }
+
+    .leftImageAndRightTextTextContentBlocks .textListItem {
+        background: white;
+        border-radius: 16px;
+        height: auto;
+    }
+
+    .leftImageAndRightTextColumn.textColumn {
+        margin-top: 40px;
+    }
+
+    .textListItemHeaderIcon {
+        width: 24px;
+    }
+
+    .leftImageAndRightText .logoImage {
+        max-width: 148px;
+        width: auto;
+    }
+
+    .leftImageAndRightTextTextContentBlocks .textListItem {
+        padding: 32px;
+    }
+
+    .leftImageAndRightText.play_fair .textContent {
+        padding-top: 32px;
+        margin-top: 32px;
+        border-top: 1px solid #A4B4C5;
+        padding-right: 24px;
+        margin-right: -24px;
+    }
+
+    .leftImageAndRightTextPlaceholder {
+        display: none;
+    }
+
+    .leftImageAndRightText.play_fair .imageColumn {
+        order: 2;
+    }
+
+    .leftImageAndRightText.play_fair .textColumn {
+        margin-top: 0;
+    }
+
+    .leftImageAndRightText.partners .imageWrap {
+        display: none;
+    }
+
+    .leftImageAndRightText.partners .leftImageAndRightTextLogoListBlocks .leftImageAndRightTextCard {
+        padding: 0 6px;
+    }
+
+    .leftImageAndRightText.partners .leftImageAndRightTextLogoListBlocks {
+        flex-wrap: wrap;
+        margin: 0 -6px;
+        row-gap: 24px;
+    }
+
+    .leftImageAndRightText.partners .textContent,
+    .leftImageAndRightText.partners .leftImageAndRightTextCard a {
+        text-align: center;
+    }
+
+    .leftImageAndRightText.partners .logoImage {
+        width: 134px;
+    }
+
+    .leftImageAndRightText.partners .leftImageAndRightTextLogoSlider {
+        margin-top: 24px;
+    }
+
+    .leftImageAndRightText.partners .leftImageAndRightTextColumn.imageColumn {
+        order: 2;
+        padding-top: 32px;
+    }
+
+    .leftImageAndRightText.partners .leftImageAndRightTextColumn.textColumn {
+        margin-top: 0;
+    }
+
+    .leftImageAndRightText.partners .imageColumnWrap {
+        margin-right: -24px;
+        padding-right: 24px;
+        border-top: 1px solid #A4B4C5;
+        padding-top: 32px;
+    }
+
+    .productBanner+.leftImageAndRightText {
+        margin-top: 0;
+        padding-top: 32px;
+    }
+
+    /* left Image And Right Text End */
+    /* Full Width CTA Start */
+    .fullWidthCTA .textContentWrap {
+        padding: 32px;
+    }
+
+    .fullWidthCTA .textContentText {
+        padding: 0 40px;
+    }
+
+    .fullWidthCTA .rightImage {
+        margin-left: auto;
+    }
+
+    .fullWidthCTA .leftImage {
+        margin-right: auto;
+    }
+
+    .fullWidthCTA .leftImage,
+    .fullWidthCTA .rightImage {
+        width: 20%;
+    }
+
+    .fullWidthCTA .textContent {
+        width: 100%;
+    }
+
+    /* Full Width CTA End */
+    /* Left Text Banner Start */
+
+    /* Left Text Banner End */
+    /* Description Start */
+    .descriptionLeftTextContent {
+        padding: 32px;
+        width: 100%;
+    }
+
+    .descriptionWrap {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .descriptionRightTextContent {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    /* Description End */
+
+    /* Sidebar With Accordion Start */
+    .accordionTitleLabel .fontWeight700 {
+        font-weight: 400;
+    }
+
+    .sidebarWithAccordionBodyWrap {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .sideBar {
+        /* Overwrite JS Code */
+        width: 100% !important;
+    }
+
+    .sidebarWithAccordion .textConntent {
+        width: 100%;
+    }
+
+    .sideBar .textConntentHeader {
+        display: none;
+    }
+
+    .sideBarWrap {
+        margin-top: 0;
+    }
+
+    .sideBarLinkListChild {
+        display: none;
+    }
+
+    .sidebarWithAccordion .sideBarWrap {
+        max-width: unset;
+        position: relative !important;
+        top: unset !important;
+        left: 0 !important;
+        transform: unset !important;
+        padding: 0;
+        border-radius: 8px;
+    }
+
+    .mobileSideBarPlaceholder {
+        display: block;
+        padding: 12px 16px;
+    }
+
+    .mobileSideBarPlaceholderLabel {
+        font-weight: 500;
+    }
+
+    .mobileSideBarPlaceholderLabelValue {
+        font-weight: 700;
+    }
+
+    .sidebarWithAccordionHeaderTitle.left {
+        text-align: center;
+    }
+
+    .mobileSideBarPlaceholder::after {
+        content: '';
+        position: absolute;
+        right: 24px;
+        top: 50%;
+        border: solid var(--black);
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 4px;
+        margin-top: -2px;
+        margin-left: 10px;
+        transition: all .3s ease;
+        transform: rotate(45deg) translateY(-50%);
+        -webkit-transform: rotate(45deg) translateY(-50%);
+    }
+
+    .sideBarLinkListWrap.show .mobileSideBarPlaceholder::after {
+        transform: rotate(225deg) translateY(-50%);
+        -webkit-transform: rotate(225deg) translateY(-50%);
+        top: 50%;
+        margin-top: -5px;
+        right: 20px;
+    }
+
+    .sideBarLinkListWrap.show .sideBarLinkListChild {
+        display: block;
+        width: 98%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: var(--bgBlue);
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        position: absolute;
+        z-index: 1;
+        background: var(--white);
+        box-shadow: 0px 14px 14px rgba(0, 33, 71, 0.1);
+    }
+
+    .desktopSideBarPlaceholder {
+        display: none;
+    }
+
+    .sideBarLinkListItem.sideBarLinkListItemActive,
+    .has-no-touchevents .sideBarLinkListItem:not(.desktopSideBarPlaceholder):hover {
+        background: var(--white);
+    }
+
+    .sideBarLinkListItem a {
+        border-bottom: 1px solid var(--lightBlue);
+    }
+
+    .sideBarLinkListItem:nth-child(2) a {
+        border-top: 1px solid var(--lightBlue);
+    }
+
+    .sidebarWithAccordionShadow {
+        display: none;
+    }
+
+    .sidebarWithAccordionHeader {
+        padding-top: 0;
+    }
+
+    /* Sidebar With Accordion End */
+
+    /* 404 Start */
+    .notFound {
+        padding: 100px 24px 100px 24px;
+    }
+
+    .notFoundWrap {
+        padding: 0 25px;
+    }
+
+    .errorPage h1 {
+        font-size: 200px;
+    }
+
+    .errorPage p {
+        font-size: 50px;
+    }
+
+    /* 404 End */
+
+    /* Donation Start */
+    .donationLogoCardWrap a {
+        padding: 22px 25px;
+    }
+
+    .donationLogoCardWrap a {
+        font-size: 12px;
+        background: var(--logoBg);
+    }
+
+    .donation .c {
+        padding: 0;
+    }
+
+    .donationRow {
+        flex-direction: column;
+        padding: 32px 24px;
+    }
+
+    .donationColumn {
+        width: 100%;
+    }
+
+    .donationPlaceholder {
+        display: none;
+    }
+
+    .donationWrap {
+        border-radius: 0;
+    }
+
+    .donationTextColumnHeader {
+        padding-right: 0;
+    }
+
+    .donationTextColumn {
+        padding-right: 0;
+    }
+
+    .donationRow {
+        gap: 32px;
+    }
+
+    .donationLogolist {
+        max-width: 342px;
+        margin: auto;
+    }
+
+    .donation+.testimonialsList .testimonialsListWrap {
+        background: var(--primaryBlue);
+        padding-bottom: 32px;
+        padding-top: 32px;
+    }
+
+    .donation+.testimonialsList {
+        margin-top: -32px;
+    }
+
+    .donationRow {
+        z-index: 1;
+    }
+
+    /* Donation End */
+
+    /* Product Banner Start */
+    .productBanner .textContentWrap,
+    .productGalleryWrap {
+        width: 100%;
+    }
+
+    .productBanner .productBannerTextContentWrap {
+        flex-direction: column;
+        padding: 72px 0 0 0;
+    }
+
+    .productBanner .textContentWrap {
+        padding: 24px 24px 0 24px;
+        order: 2;
+    }
+
+    .productBanner .c {
+        padding: 0;
+    }
+
+    .productGalleryTopSlider,
+    .productGalleryInner {
+        border-radius: 0;
+    }
+
+    .productGalleryWrap .productCountdown {
+        display: none;
+    }
+
+    .productGalleryWrap .productGalleryBottomLeft {
+        display: none;
+    }
+
+    .productGalleryBottom {
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 24px;
+    }
+
+    .productGalleryBottomRight {
+        width: 100%;
+    }
+
+    .sliderNavWrap {
+        justify-content: space-between;
+    }
+
+    .productGalleryTopItemImage .sizer,
+    .productGalleryTopItemVideo {
+        padding-top: 92.30%;
+    }
+
+    .productBanner .textContentTitle {
+        text-align: center;
+    }
+
+    .productBanner .textContentTitle label {
+        display: none;
+    }
+
+    .textContentWrap .productCountdown {
+        position: relative;
+        margin: auto;
+        padding: 24px 24px 0 24px;
+        max-width: max-content;
+    }
+
+    .productBanner .textContentText {
+        padding-bottom: 16px;
+    }
+
+    .productBanner .productDetails {
+        padding-top: 16px;
+        flex-wrap: wrap;
+        row-gap: 24px;
+        margin: 0 -16px;
+    }
+
+    .productBanner .productDetails div {
+        width: 50%;
+        padding: 0 16px;
+    }
+
+    .ticketBar .bannerLink {
+        display: block;
+        text-align: center;
+        background: var(--primaryBlue);
+        padding: 16px 24px;
+    }
+
+    .ticketBar .btnWrap:last-child {
+        margin: 0 -24px;
+    }
+
+    .productBanner .btnWrap .bannerEnterNowBtn,
+    .bannerEnterNowBtn {
+        background: var(--white);
+        color: var(--primaryBlue);
+        transition: all .3s;
+        margin: 0 24px;
+        width: auto;
+        padding: 16px 24px;
+    }
+
+    .has-no-touchevents .bannerEnterNowBtn:hover,
+    .has-no-touchevents .productBanner .btnWrap .bannerEnterNowBtn:hover {
+        background: var(--primaryBlue);
+        color: var(--white);
+        border-color: var(--primaryBlue);
+    }
+
+    .productButtons {
+        display: none;
+    }
+
+    .stickyBtnCta {
+        position: fixed;
+        width: 100%;
+        bottom: 24px;
+        left: 0;
+        z-index: 1;
+    }
+
+    .productBanner .btnWrap {
+        padding-top: 16px;
+    }
+
+    .productBanner .textContentActionContent {}
+
+    .textContentWrap .productCountdown {
+        display: block;
+        z-index: 0;
+    }
+
+    .textContentTextContent .textContentText{
+        display: none;
+    }
+
+    .productDetailsOnlyMobileWrap {
+        padding-top: 0;
+        display: none;
+    }
+
+    .textContentWrap .productDetails {
+        display: none;
+    }
+
+    .productDetailsOnlyMobile {
+        display: block;
+    }
+
+    .productDetailsOnlyMobile .textContentText {
+        display: block;
+        border-color: transparent;
+    }
+
+    .productDetailsOnlyMobile .productDetails {
+        display: flex;
+        padding-bottom: 32px;
+    }
+
+    .productDetailsOnlyMobile .btnWrap {
+        padding-bottom: 32px;
+    }
+
+    .productDetailsOnlyMobileWrap .bannerEnterNowBtn {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+
+    .mobileProductDetailsActive .moreDetailsBtn .down {
+        -webkit-transform: rotate(225deg);
+        margin-top: 9px;
+    }
+
+    .mobileProductDetailsActive .ticketBar .bannerLink {
+        display: none;
+    }
+
+    .productBannerBottomShadow {
+        top: 0;
+        right: 0;
+        left: unset;
+        transform: translateX(32%);
+        width: 100%;
+        height: 100%;
+    }
+
+    .productSubscribeForm {
+        max-width: unset;
+    }
+
+    .productCountdownItemValue .size18 {
+        font-size: 18px;
+    }
+
+    /* Product Banner End */
+
+    /* Popup Start */
+    .popupContent {
+        width: 90%;
+        top: 0%;
+        height: 100vh;
+    }
+
+    /* Popup End */
+
+    /* Tab Section Start */
+    .single-product .tabSectionWrap,
+    .page-template-cart .tabSectionWrap {
+        width: 100%;
+        padding: 32px 24px;
+    }
+
+    .tabSectionBody {
+        padding-top: 32px;
+    }
+
+    .tabSectionHeaderList {
+        margin-bottom: 32px;
+    }
+
+    .quantityTabWrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttonsWrap {
+        padding-left: 0;
+        padding-top: 40px;
+        max-width: 240px;
+        width: 100%;
+    }
+
+    .ticketsWrap {
+        width: 100%;
+    }
+
+    .ticketItemWrap {
+        align-items: center;
+        min-height: 100%;
+        padding: 24px;
+        border-color: #CECECE;
+    }
+
+    .ticketItemRow {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .ticketItemColumn {
+        text-align: center;
+    }
+
+    .checkOutForm {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .checkOutForm .col1-set {
+        width: 100%;
+    }
+
+    .shopTable .product-thumbnail {
+        display: none;
+    }
+
+    body.woocommerce-checkout .cartTab .shopTable .productTextContent {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .tabSectionWrap .backBtn {
+        display: none;
+    }
+
+    .woocommerce #payment #place_order,
+    .woocommerce-page #payment #place_order {
+        max-width: 235px;
+        float: none;
+        display: block;
+        margin: 40px auto 0 auto;
+    }
+
+    .woocommerce form .form-row .input-checkbox {
+        margin: 0 8px 0 0;
+    }
+
+    .woocommerce-checkout-review-order-table tfoot {
+        justify-content: center !important;
+        flex-wrap: wrap;
+    }
+
+    .tabSectionWrap {
+        padding: 32px 24px;
+    }
+
+    .woocommerce form .form-row.customInputStyle {
+        width: 100%;
+    }
+
+    .thankYouWrap {
+        padding: 32px 0;
+    }
+
+    .thankYouFooter {
+        padding-top: 52px;
+    }
+
+    /* Tab Section End */
+    /* My Account Form Start */
+    .myAccountForm.tabSection {
+        padding: 40px 0 0 0;
+    }
+
+    .myAccountForm .formRow {
+        flex-direction: column;
+    }
+
+    .myAccountForm .formLeft,
+    .myAccountForm .formRight {
+        width: 100%;
+    }
+
+    .myAccountForm .formLeft {
+        display: none;
+    }
+
+    .formRight {
+        padding: 40px 24px;
+    }
+
+    .formHeader {
+        padding-bottom: 32px;
+    }
+
+    .formInputRow {
+        flex-wrap: wrap;
+        row-gap: 0;
+    }
+
+    .formRight.cardTextContentEqualHeight,
+    .formLeft.cardTextContentEqualHeight {
+        height: auto !important;
+    }
+
+    .col25 {
+        width: 100%;
+    }
+
+    .col50 {
+        width: 100%;
+    }
+
+    .colRow {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .colRow.colGap24.avoid-responsive {
+        gap: 24px;
+    }
+
+    .textRight {
+        text-align: left;
+    }
+
+    .cardButton .colRow {
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .pt60 {
+        padding-top: 32px;
+    }
+
+    .pb30 {
+        padding-bottom: 24px;
+    }
+
+    .referId+button {
+        padding: 8px;
+    }
+
+    .cardHeader .pb24 {
+        padding-bottom: 0;
+    }
+
+    .tabNav {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .tabContent .btnWrap a {
+        left: 0;
+        position: relative;
+    }
+
+    .col10 {
+        width: 100%;
+    }
+
+    .col90 {
+        width: 100%;
+    }
+
+    /* My Account Form End */
+
+    /* Past Winners Start */
+    .textDivBody .colRow {
+        flex-direction: row;
+    }
+
+    .buttonWrap {
+        justify-content: center;
+    }
+
+    .pastWinnersBody {
+        margin-top: 40px;
+    }
+
+    .closeText {
+        display: none;
+    }
+
+    .instaPopup .close {
+        right: -20px;
+    }
+
+    .instaPopup .popupContent {
+        top: 5%;
+    }
+
+    /* Past Winners End */
+
+    /* Account Create Popup Start */
+    .accountCreatePopup .popupContent {
+        width: 90%;
+    }
+
+    /* Account Create Popup End */
+
+    /* Sticky Enter Now CTA Start */
+    .stickyBtnCtaWrap {
+        display: block;
+    }
+
+    .stickyBtnCta {
+        z-index: 2;
+        margin: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+    }
+
+    /* Sticky Enter Now CTA End */
+}
+
+@media (max-width: 575px) {
+    .viewport .content {
+        min-height: 70svh;
+    }
+
+    /* Cookie Banner Start */
+    .cky-consent-container {
+        width: 100% !important;
+    }
+
+    .cky-consent-container .cky-consent-bar {
+        padding: 15px !important;
+        border-radius: 16px !important;
+    }
+    .cky-custom-brand-logo-wrapper, .cky-notice .cky-title, .cky-notice-des, .cky-notice-btn-wrapper {
+        padding: 0 0px !important;
+    }
+    .cky-notice-btn-wrapper .cky-btn {
+        width: auto !important;
+    }
+    .cky-notice-btn-wrapper {
+        flex-direction: row !important;
+        gap: 10px;
+    }
+    .cky-consent-container.cky-box-bottom-right {
+        bottom: 37%;
+        right: 0;
+        width: 95% !important;
+        left: 0;
+        margin: auto;
+     }
+     .cky-notice-btn-wrapper .cky-btn-accept {
+        margin-top: 10px !important;
+    }
+    .cky-notice-group .cky-btn-accept {
+        padding: 5px 14px !important;
+        font-size: 12px !important;
+    }
+    .cky-notice-group .cky-btn-reject {
+        padding: 5px 14px !important;
+        font-size: 12px !important;
+    }
+    /* Cookie Banner End */
+
+    /* Account Create Popup Start */
+    .accountCreatePopup .popupContent .btnWrap {
+        position: relative;
+        right: 0;
+        top: 0;
+        transform: none;
+        z-index: 4;
+    }
+
+    .accountCreatePopup .btn {
+        padding: 17px 15px;
+    }
+
+    .customInputStyle.phoneNumberField {
+        display: none;
+    }
+
+    /* Account Create Popup End */
+    /* Nav Tabs Start */
+
+    .navTabItem {
+        font-size: 14px;
+    }
+
+    /* Nav Tabs End */
+    /* Full Width CTA Start */
+    .fullWidthCTA .textContent {
+        width: 68.88%;
+    }
+
+    .fullWidthCTA .textContentWrap {
+        padding: 80px 0px 80px 32px;
+        text-align: left;
+    }
+
+    .fullWidthCTA .textContentWrap .size57 {
+        font-size: 24px;
+    }
+
+    .fullWidthCTA .textContentText {
+        font-size: 14px;
+        padding: 0px;
+    }
+
+    .fullWidthCTA .textContent .btnWrap .btn {
+        display: block;
+    }
+
+    .fullWidthCTA .leftImage {
+        display: none;
+    }
+
+    .fullWidthCTA .rightImage {
+        width: 32%;
+    }
+
+    .fullWidthCTA .rightImageWrap .bgimage {
+        background-position: -50px;
+    }
+
+    .fullWidthCTAWrap {
+        border-radius: 0px;
+    }
+
+    /* Full Width CTA End */
+}
+
+@media (max-width: 420px) {
+
+    /* Common Start */
+    .headerLogo {
+        width: 50px;
+    }
+
+    /* Common End */
+    /* left Image And Right Text Start */
+
+    /* left Image And Right Text End */
+
+    /* 404 Start */
+    .errorPage h1 {
+        font-size: 150px;
+    }
+
+    .errorPage p {
+        font-size: 40px;
+    }
+
+    /* 404 End */
+
+    /* Cookie Banner Start */
+    .cky-consent-container {
+        width: 100% !important;
+    }
+
+    /* Cookie Banner End */
+}
+
+@media (max-width: 390px) {
+
+    /* Common Start */
+    .description+.setWhite {
+        padding-top: 32px;
+    }
+
+    .fullWidthCTA+.setWhite {
+        padding-top: 32px;
+    }
+
+    /* Common End */
+    /* Description Start */
+    .description {
+        display: none;
+    }
+
+    /* Description End */
+
+    /* 404 Start */
+    .errorPage h1 {
+        font-size: 120px;
+    }
+
+    .errorPage p {
+        font-size: 30px;
+    }
+
+    /* 404 End */
+
+    /* Popup Start */
+    .popupContent {
+        padding: 24px;
+    }
+
+    /* Popup End */
+}

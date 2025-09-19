@@ -1,0 +1,129 @@
+/* Cookie Policy Template Start */
+
+body.page-template-cookiepolicy {
+    background: var(--white);
+    position: relative;
+}
+
+body.page-template-cookiepolicy .cookiePolicyWrap {
+    border-radius: 32px;
+    padding: 160px 120px 80px 120px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cookiePolicyContent:first-child > p {
+    display: none;
+}
+
+body.page-template-cookiepolicy .cookiePolicyContent [data-custom-class='body'] div:nth-child(3) {
+    display: none;
+}
+
+/* body.page-template-cookiepolicy .cookiePolicyContent div:first-child, */
+body.page-template-cookiepolicy .cookiePolicyContent [data-custom-class='body'] div:nth-child(1), 
+body.page-template-cookiepolicy .cookiePolicyContent [data-custom-class='body'] div:nth-child(7), 
+body.page-template-cookiepolicy .cookiePolicyContent [data-custom-class='body'] div:nth-child(9),
+body.page-template-cookiepolicy .cookiePolicyContent [data-custom-class='body'] div:nth-child(11),
+body.page-template-cookiepolicy .cookiePolicyContent [data-custom-class='body'] div:nth-child(13),
+body.page-template-cookiepolicy .cookiePolicyContent [data-custom-class='body'] div:nth-child(15),
+body.page-template-cookiepolicy .cookiePolicyContent [data-custom-class='body'] div:nth-child(17),
+body.page-template-cookiepolicy .cookiePolicyContent [data-custom-class='body'] div:nth-child(19),
+body.page-template-cookiepolicy .cookiePolicyContent [data-custom-class='body'] div:nth-child(21),
+body.page-template-cookiepolicy .cookiePolicyContent [data-custom-class='body'] div:nth-child(23),
+body.page-template-cookiepolicy .cookiePolicyContent [data-custom-class='body'] div:nth-child(25),
+body.page-template-cookiepolicy .cookiePolicyContent [data-custom-class='body'] div:nth-child(28),
+body.page-template-cookiepolicy .cookiePolicyContent [data-custom-class='body'] div:nth-child(29),
+body.page-template-cookiepolicy .cookiePolicyContent [data-custom-class='body'] div:nth-child(31),
+body.page-template-cookiepolicy .cookiePolicyContent [data-custom-class='body'] div:nth-child(33),
+body.page-template-cookiepolicy .cookiePolicyContent [data-custom-class='body'] div:nth-child(35),
+body.page-template-cookiepolicy .cookiePolicyContent [data-custom-class='body'] div:nth-child(38),
+body.page-template-cookiepolicy .cookiePolicyContent [data-custom-class='body'] div:nth-child(44),
+body.page-template-cookiepolicy .cookiePolicyContent [data-custom-class='body'] div:nth-child(46),
+body.page-template-cookiepolicy .cookiePolicyContent [data-custom-class='body'] div:nth-child(48),
+body.page-template-cookiepolicy .cookiePolicyContent [data-custom-class='body'] div:nth-child(50),
+body.page-template-cookiepolicy .cookiePolicyContent [data-custom-class='body'] div:nth-child(52),
+body.page-template-cookiepolicy .cookiePolicyContent [data-custom-class='body'] div:nth-child(54),
+body.page-template-cookiepolicy .cookiePolicyContent [data-custom-class='body'] div:nth-child(56),
+body.page-template-cookiepolicy .cookiePolicyContent [data-custom-class='body'] div:nth-child(58),
+body.page-template-cookiepolicy .cookiePolicyContent [data-custom-class='body'] div:nth-child(60) {
+    margin-bottom: 20px;
+}
+
+body.page-template-cookiepolicy .cookiePolicyContent [data-custom-class='body'] div:nth-child(42) {
+    margin: 20px 0;
+}
+
+body.page-template-cookiepolicy .cookiePolicyContent [data-custom-class='body'] div:nth-child(29) > p {
+    margin-bottom: 20px;
+}
+
+body.page-template-cookiepolicy .cookiePolicyContent [data-custom-class='body'] div:nth-child(29) > div > span > section > div {
+    margin-bottom: 0px;
+}
+
+body.page-template-cookiepolicy .cookiePolicyContent div ul {
+    padding-left: 40px;
+    margin-bottom: 20px;
+    list-style-type: disc;
+}
+
+/* Cookie Policy Template End */
+
+@media (max-width: 1600px) {
+
+    /* Cookie Policy Template Start */
+
+    body.page-template-cookiepolicy .cookiePolicyWrap {
+        padding: 160px 100px 60px 100px;
+    }
+
+    /* Cookie Policy Template End */
+
+}
+
+@media (max-width: 1440px) {
+
+    /* Cookie Policy Template Start */
+
+    body.page-template-cookiepolicy .cookiePolicyWrap {
+        padding: 160px 70px 40px 70px;
+    }
+
+    /* Cookie Policy Template End */
+    
+}
+
+@media (max-width: 1400px) {
+    /* Cookie Policy Template Start */
+
+    body.page-template-cookiepolicy .cookiePolicyWrap {
+        padding: 140px 70px 40px 70px;
+    }
+
+    /* Cookie Policy Template End */
+}
+
+@media (max-width: 1200px) {
+    /* Cookie Policy Template Start */
+
+    body.page-template-cookiepolicy .cookiePolicyWrap {
+        padding: 140px 55px 40px 55px;
+    }
+
+    /* Cookie Policy Template End */
+}
+
+@media (max-width: 1024px) {
+    /* Cookie Policy Template Start */
+
+    body.page-template-cookiepolicy .cookiePolicyWrap {
+        padding: 80px 24px 40px 24px;
+    }
+
+    body.page-template-cookiepolicy .section .c {
+        padding: 0;
+    }
+
+    /* Cookie Policy Template End */
+}

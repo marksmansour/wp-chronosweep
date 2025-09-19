@@ -1,0 +1,238 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+}
+body {
+    overflow-y: scroll;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+}
+*{
+    margin:0px;
+    padding:0px; 
+    vertical-align:top;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+}
+img[data-src] {
+    opacity: 0;
+    min-height: 200px;
+}
+a, button{
+    cursor:pointer;
+    text-decoration:none;
+    color: inherit;
+    transition: all 0.4s ease;
+}
+a:active{
+    background-color: transparent;
+}  
+select, map, area, a, button{
+    border:0px; 
+    outline:none;
+}
+img{
+    border-style:none;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight:normal;
+}
+input[type=text], input[type=password], textarea{
+    text-align: left; 
+    background: transparent;
+}
+input, textarea, select{
+    border: 0; 
+    outline: none; 
+    line-height: normal; 
+    -webkit-appearance: none; 
+    border-radius: 0;
+}
+textarea{
+    resize: none;
+}
+.c{
+    margin: auto;
+}
+.p-0{
+    padding: 0px !important;
+}
+.p-t-0{
+    padding-top: 0px !important;
+}
+.m-0{
+    margin: 0px !important;
+}
+.m-t-0{
+    margin-top: 0px !important;
+}
+.clear{
+    clear: both;
+}
+.middle-wrap {
+    white-space: nowrap;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.middle {
+    vertical-align: middle;
+    display: inline-block;
+    white-space: normal;
+}
+.middle-wrap-abs {
+    white-space: nowrap;
+}
+.middle-wrap-table {
+    display: table;
+    width: 100%;
+    vertical-align: middle;
+    position: relative;
+}
+.middle-wrap-table .middle {
+    display: table-cell;
+}
+.middle-wrap:after, .middle-wrap-abs:after, .thank:after, .video-overlay:after {
+    content: "";
+    vertical-align: middle;
+    display: inline-block;
+    width: 1px;
+    height: 100%;
+}
+.image {
+    position: relative;
+    display: block;
+}
+.bsz, .bsz .bgimage {
+    background: url() no-repeat 50% 50%;
+    overflow: hidden;
+    background-size: cover;
+}
+.bsz .bgimage {
+    opacity: 1;
+    transition: opacity .8s;
+}
+.bsz.loading .bgimage {
+    opacity: 0;
+}
+.bsz img {
+    display: none;
+    position: relative;
+}
+.bsz, .bsz .bgimage, .middle-wrap-abs, .overlay, .thank, .full-dimension {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.full-dimension-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.thank {
+    overflow: hidden;
+    white-space: nowrap;
+    background: #68b10c;
+    white-space: nowrap;
+    z-index: 10;
+    display: none;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: .05em;	
+}
+.thank span {
+    display: inline-block;
+    width: 100%;
+    white-space: normal;
+    padding: 10px 15px;
+    vertical-align: middle;
+}
+@keyframes rotateSpinner{
+    0%{
+        transform:rotate(0deg)
+    }
+    100%{
+        transform:rotate(360deg)
+    }
+}
+.loading:after, .submitting:after, .image-container:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+    width: 50px !important;
+    height: 50px !important;
+    background: transparent url(images/load.png) no-repeat 50% 50%;
+    background-size: 70%;
+    border-radius: 50%;
+    -webkit-animation: rotateSpinner 2s linear infinite;
+    animation: rotateSpinner 2s linear infinite;
+    font-size: 0;
+}
+.validating:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -11px;
+    height: 16px;
+    width: 16px;
+    border: 2px solid rgb(0, 0, 0);
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: rotateSpinner .75s linear infinite;
+}
+.button.submitting {
+    pointer-events: none;
+}
+.button.submitting:after {
+    border-color: #fff;
+    border-right-color: transparent;
+    right: 50%;
+    margin-right: -11px;
+}
+.button.submitting span {
+    visibility: hidden;
+}
+.viewport {
+    overflow: hidden;
+}
+.viewport.lock {
+    position: fixed;
+    width: 100%;
+    left: 0;
+}
+.loader-line {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    width: 100%;
+    height: 3px;
+    display: none;
+}
+.loader-line div {
+    width: 0%;
+    height: 100%;
+    background: #68b10c;
+    box-shadow: 0px 2px 6px 0px #68b10c;
+}
+.zoom-image .bgimage{
+    transition: transform 1s;
+}
+.zoom-image:hover .bgimage {
+    transform: scale(1.1, 1.1);
+}

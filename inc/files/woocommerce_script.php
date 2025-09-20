@@ -17,67 +17,122 @@ function load_admin_style() {
 }
 
 function getOrderCountForProduct($productId) {
-    $orders = wc_get_orders( array(
-        'numberposts' => -1,
-        'post_type' => 'shop_order',
-        'post_status' => array('wc-completed','wc-processing')
-    ) );
+	$productId = (int) $productId;
+	$cache_key = 'cs_order_counts_' . $productId;
+	$cached = wp_cache_get($cache_key, 'cs');
+	if ($cached !== false) return $cached;
 
-    $countOrders = 0;
-    $quantity = 0;
-    foreach($orders as $order){
-        $hasProduct = false;
-        foreach($order->get_items() as $itemValues){
-            if( $itemValues['product_id'] == $productId ){
-                $quantity = $quantity + $itemValues['quantity'];
-                $hasProduct = true;
-            }
-        }
-        if( $hasProduct ){
-            $countOrders++;
-        }
-    }
-    return array("count"=>$countOrders,"quantity"=>$quantity);
+	global $wpdb;
+	$opl = $wpdb->prefix . 'wc_order_product_lookup';
+	$os  = $wpdb->prefix . 'wc_order_stats';
+
+	$opl_exists = $wpdb->get_var($wpdb->prepare("SHOW TABLES LIKE %s", $opl));
+	$os_exists  = $wpdb->get_var($wpdb->prepare("SHOW TABLES LIKE %s", $os));
+
+	if ($opl_exists && $os_exists) {
+		$statuses = ['wc-completed','wc-processing'];
+		$placeholders = implode(',', array_fill(0, count($statuses), '%s'));
+		$sql = $wpdb->prepare("
+			SELECT COUNT(DISTINCT os.order_id) AS orders, COALESCE(SUM(opl.product_qty),0) AS qty
+			FROM {$opl} AS opl
+			INNER JOIN {$os} AS os ON os.order_id = opl.order_id
+			WHERE opl.product_id = %d
+			  AND os.status IN ($placeholders)
+		", array_merge([$productId], $statuses));
+		$row = $wpdb->get_row($sql, ARRAY_A);
+		$result = ['count' => (int) $row['orders'], 'quantity' => (int) $row['qty']];
+	} else {
+		// Fallback (old Woo): still works, but slower
+		$result = ['count' => 0, 'quantity' => 0];
+		if (function_exists('wc_get_orders')) {
+			$orders = wc_get_orders([
+				'limit'  => -1,
+				'status' => ['wc-completed','wc-processing'],
+				'return' => 'objects',
+			]);
+			$ordersCount = 0; $qty = 0;
+			foreach ($orders as $order) {
+				$has = false;
+				foreach ($order->get_items() as $item) {
+					if ((int) $item->get_product_id() === $productId) {
+						$qty += (int) $item->get_quantity();
+						$has = true;
+					}
+				}
+				if ($has) $ordersCount++;
+			}
+			$result = ['count' => $ordersCount, 'quantity' => $qty];
+		}
+	}
+
+	// short cache; invalidated on order status change below
+	wp_cache_set($cache_key, $result, 'cs', 60);
+	return $result;
 }
 
 function getUserLimit($productId, $userId = 0){
-    $adminLimit = get_field('product_extra_details_maximum_tickets_a_user_can_purchase',$productId);
+	$productId = (int) $productId;
+	$adminLimit = (int) get_field('product_extra_details_maximum_tickets_a_user_can_purchase', $productId);
+	if ($adminLimit <= 0) return base64_encode(0);
 
-    $oldCount = 0;
+	if (!$userId && is_user_logged_in()) {
+		$userId = get_current_user_id();
+	}
+	if (!$userId) return base64_encode($adminLimit);
 
-    if (is_user_logged_in() || $userId != 0) {
+	$cache_key = 'cs_user_qty_' . $productId . '_' . (int)$userId;
+	$cached = wp_cache_get($cache_key, 'cs');
+	if ($cached !== false) return base64_encode(max(0, $adminLimit - (int)$cached));
 
-        if(is_user_logged_in()){
-            $currentUser = wp_get_current_user();
-            $userId = $currentUser->ID;
-        }else{
-            $userId = $userId;
-        }
+	global $wpdb;
+	$opl = $wpdb->prefix . 'wc_order_product_lookup';
+	$os  = $wpdb->prefix . 'wc_order_stats';
 
-        $orders = wc_get_orders( array(
-            'numberposts' => -1,
-            'post_type' => 'shop_order',
-            'post_status' => array('wc-completed','wc-processing'),
-            'customer_id' => $userId,
-        ) );
-    
-        foreach($orders as $order){
-            foreach($order->get_items() as $itemValues){
-                if( $itemValues['product_id'] == $productId ){
-                    $oldCount = $oldCount + $itemValues['quantity'];
-                }
-            }
-        }
-    }
+	$opl_exists = $wpdb->get_var($wpdb->prepare("SHOW TABLES LIKE %s", $opl));
+	$os_exists  = $wpdb->get_var($wpdb->prepare("SHOW TABLES LIKE %s", $os));
 
-    $adminLimit = $adminLimit - $oldCount;
+	$userQty = 0;
 
-    return base64_encode($adminLimit);
-    //return $adminLimit;
+	if ($opl_exists && $os_exists) {
+		$statuses = ['wc-completed','wc-processing'];
+		$placeholders = implode(',', array_fill(0, count($statuses), '%s'));
+		$sql = $wpdb->prepare("
+			SELECT COALESCE(SUM(opl.product_qty),0) AS qty
+			FROM {$opl} AS opl
+			INNER JOIN {$os} AS os ON os.order_id = opl.order_id
+			WHERE opl.product_id = %d
+			  AND os.customer_id = %d
+			  AND os.status IN ($placeholders)
+		", array_merge([$productId, (int)$userId], $statuses));
+		$userQty = (int) $wpdb->get_var($sql);
+	} else {
+		if (function_exists('wc_get_orders')) {
+			$orders = wc_get_orders([
+				'limit'       => -1,
+				'status'      => ['wc-completed','wc-processing'],
+				'customer_id' => (int)$userId,
+				'return'      => 'objects',
+			]);
+			foreach ($orders as $order) {
+				foreach ($order->get_items() as $item) {
+					if ((int) $item->get_product_id() === $productId) {
+						$userQty += (int) $item->get_quantity();
+					}
+				}
+			}
+		}
+	}
+
+	wp_cache_set($cache_key, $userQty, 'cs', 60);
+	return base64_encode(max(0, $adminLimit - $userQty));
 }
 
 function getCartCount(){
-    return WC()->cart->get_cart_contents_count();;
+    if (isset($_COOKIE['woocommerce_items_in_cart'])) return (int) $_COOKIE['woocommerce_items_in_cart'];
+    if (function_exists('is_cart') && (is_cart() || is_checkout())) {
+        if (function_exists('WC') && WC()->cart) return WC()->cart->get_cart_contents_count();
+    }
+    return 0;
 }
 
 // Add to cart action
@@ -281,7 +336,13 @@ function add_to_cart_notification() {
 add_action('wp_footer', 'add_to_cart_notification');
 
 
-add_action('woocommerce_cart_calculate_fees', 'apply_quantity_based_discount');
+add_action('wp', function () {
+	if ( function_exists('is_cart') && ( is_cart() || is_checkout() ) ) {
+		add_action('woocommerce_cart_calculate_fees', 'apply_quantity_based_discount');
+		add_action('woocommerce_after_cart_item_quantity_update', 'check_custom_field_on_cart_quantity_change', 10, 4);
+		add_action('woocommerce_before_calculate_totals', 'check_product_expiry_in_cart');
+	}
+}, 9);
 
 function apply_quantity_based_discount() {
 
@@ -1679,3 +1740,16 @@ function validate_confirm_email_field($posted) {
 }
 add_action('woocommerce_checkout_process', 'validate_confirm_email_field');
 
+add_action('woocommerce_order_status_changed', function($order_id){
+	$order = wc_get_order($order_id);
+	if (!$order) return;
+	foreach ($order->get_items() as $item) {
+		$product_id = (int) $item->get_product_id();
+		wp_cache_delete('cs_order_counts_' . $product_id, 'cs');
+
+		$customer_id = (int) $order->get_user_id();
+		if ($customer_id) {
+			wp_cache_delete('cs_user_qty_' . $product_id . '_' . $customer_id, 'cs');
+		}
+	}
+}, 10, 1);

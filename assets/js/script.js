@@ -612,3 +612,67 @@ $(document).ready(function($) {
             localStorage.clear();
         });
 });
+
+jQuery(document).ready(function($) {
+    // Function to insert section titles
+    function insertSectionTitles() {
+        // Remove any existing section titles and weird section fields first
+        $('.checkout-section-title-wrapper').remove();
+        $('#billing_section_name_field, #billing_section_address_field, #billing_section_contact_field').remove();
+        $('[id*="section_"][id*="_field"]').remove();
+        
+        // Name section - before first name field
+        var firstNameField = $('#billing_first_name_field');
+        if (firstNameField.length && !firstNameField.prev('.checkout-section-title-wrapper').length) {
+            firstNameField.before('<div class="checkout-section-title-wrapper form-row-wide"><h4 class="checkout-section-title">Name</h4></div>');
+        }
+        
+        // Address section - before street address
+        var addressField = $('#billing_address_1_field');
+        if (addressField.length && !addressField.prev('.checkout-section-title-wrapper').length) {
+            addressField.before('<div class="checkout-section-title-wrapper form-row-wide"><h4 class="checkout-section-title">Address</h4></div>');
+        }
+        
+        // Contact section - before phone
+        var phoneField = $('#billing_phone_field');
+        if (phoneField.length && !phoneField.prev('.checkout-section-title-wrapper').length) {
+            phoneField.before('<div class="checkout-section-title-wrapper form-row-wide"><h4 class="checkout-section-title">Contact</h4></div>');
+        }
+        
+    }
+    
+    // Function to check if input has value and add class
+    function checkFloatingLabels() {
+        $('.floating-label input').each(function() {
+            var $input = $(this);
+            var $label = $input.next('.floating-label-text');
+            
+            if ($input.val() && $input.val().length > 0) {
+                $input.closest('.floating-label').addClass('has-value');
+                $input.attr('data-has-value', 'true');
+            } else {
+                $input.closest('.floating-label').removeClass('has-value');
+                $input.attr('data-has-value', 'false');
+            }
+        });
+    }
+    
+    // Insert section titles and fix field order on page load
+    setTimeout(function() {
+        insertSectionTitles();
+        checkFloatingLabels();
+    }, 100);
+    
+    // Check on input change
+    $('.floating-label input').on('input blur', function() {
+        checkFloatingLabels();
+    });
+    
+    // Check after AJAX updates
+    $(document.body).on('updated_checkout country_to_state_changed', function() {
+        setTimeout(function() {
+            insertSectionTitles();
+            checkFloatingLabels();
+        }, 100);
+    });
+});

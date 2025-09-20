@@ -539,6 +539,188 @@ span#select2-billing_country-container {
     align-items: center;
 }
 
+/* Floating Label Styling - Fixed Animation */
+.woocommerce-checkout .floating-label {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.woocommerce-checkout .floating-input-wrapper {
+    position: relative;
+    display: block;
+}
+
+/* Input Fields */
+.woocommerce-checkout .floating-label input[type="text"],
+.woocommerce-checkout .floating-label input[type="email"],
+.woocommerce-checkout .floating-label input[type="tel"] {
+    width: 100%;
+    height: 56px;
+    padding: 20px 16px 8px 16px;
+    border: 1px solid #E7EBF1;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'IBM Plex Sans';
+    background: #F7F8FB;
+    color: #000000;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+}
+
+/* Input Focus State */
+.woocommerce-checkout .floating-label input:focus {
+    border: 3px solid #CADFF0;
+    background: #FFFFFF;
+    outline: none;
+    box-shadow: none;
+    padding: 20px 14px 8px 14px;
+}
+
+/* Floating Label Text - Default State (centered) */
+.woocommerce-checkout .floating-label-text {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(18, 18, 18, 0.5); /* #121212 with 50% opacity */
+    font-family: 'IBM Plex Sans';
+    transition: all 0.2s ease;
+    pointer-events: none;
+    background: transparent;
+    z-index: 1;
+}
+
+/* Label Float Up Animation - When focused or has value */
+.woocommerce-checkout .floating-label input:focus + .floating-label-text,
+.woocommerce-checkout .floating-label.has-value .floating-label-text {
+    top: 6px;
+    left: 16px;
+    transform: translateY(0);
+    font-size: 10px;
+    font-weight: 400;
+    color: #888888;
+    background: transparent;
+    padding: 0;
+}
+
+/* Required asterisk styling */
+.woocommerce-checkout .floating-label-text .required {
+    color: #DD471E;
+    margin-left: 2px;
+}
+
+/* Override any old customInputStyle that might conflict */
+.woocommerce-checkout .customInputStyle.floating-label input[type="text"],
+.woocommerce-checkout .customInputStyle.floating-label input[type="email"],
+.woocommerce-checkout .customInputStyle.floating-label input[type="tel"] {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+}
+
+/* Form layouts remain the same */
+.woocommerce-checkout .form-row-first {
+    width: 48%;
+    float: left;
+    margin-right: 4%;
+}
+
+.woocommerce-checkout .form-row-last {
+    width: 48%;
+    float: right;
+}
+
+.woocommerce-checkout .form-row-wide {
+    width: 100%;
+    clear: both;
+}
+
+/* Section titles with better spacing */
+.woocommerce-checkout .customTitleStyle {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primaryBlue);
+    margin: 28px 0 20px 0;
+    font-family: 'IBM Plex Sans';
+    border: none;
+    padding: 0;
+    line-height: 1.2;
+}
+
+/* Main title */
+.woocommerce-checkout .woocommerce-billing-fields h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--primaryBlue);
+    margin-bottom: 24px;
+    font-family: 'IBM Plex Sans';
+}
+
+/* Form container spacing */
+.woocommerce-checkout .woocommerce-billing-fields__field-wrapper {
+    padding: 0;
+}
+
+/* Clear floats */
+.woocommerce-checkout .woocommerce-billing-fields__field-wrapper::after,
+.woocommerce-checkout .form-row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Select dropdown styling to match */
+.woocommerce-checkout .floating-label select,
+.woocommerce-checkout .floating-label .select2-container .select2-selection--single {
+    height: 56px !important;
+    border: 1px solid #E7EBF1 !important;
+    border-radius: 8px !important;
+    background: #F7F8FB !important;
+    font-family: 'IBM Plex Sans' !important;
+    font-size: 16px !important;
+    padding: 8px 16px !important;
+    line-height: 40px !important;
+}
+
+.woocommerce-checkout .floating-label .select2-container--open .select2-selection--single,
+.woocommerce-checkout .floating-label select:focus {
+    border: 3px solid #CADFF0 !important;
+    background: #FFFFFF !important;
+    padding: 8px 14px !important;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .woocommerce-checkout .form-row-first,
+    .woocommerce-checkout .form-row-last {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .woocommerce-checkout .customTitleStyle {
+        margin: 24px 0 16px 0;
+    }
+    
+    .woocommerce-checkout .floating-label {
+        margin-bottom: 16px;
+    }
+}
+
+/* Fix any validation styling */
+.woocommerce-checkout .woocommerce-validated input,
+.woocommerce-checkout .woocommerce-invalid input {
+    border-color: #E7EBF1 !important;
+}
+
+.woocommerce-checkout .woocommerce-invalid input {
+    border-color: #DD471E !important;
+}
+
 @media (max-width: 1440px) {
 
     .woocommerce-cart .cartTab .shopTable .productTextContent,
@@ -732,4 +914,238 @@ span#select2-billing_country-container {
     .woocommerce-page table.cart .product-thumbnail {
         flex-wrap: wrap;
     }
+}
+
+/* Section Titles */
+.checkout-section-title-wrapper {
+    width: 100%;
+    clear: both;
+    margin: 32px 0 16px 0;
+}
+
+.checkout-section-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primaryBlue);
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Sans';
+    border: none;
+    line-height: 1.4;
+}
+
+/* Fix Country Field (no floating label) */
+#billing_country_field,
+#shipping_country_field {
+    margin-bottom: 20px;
+}
+
+#billing_country_field label,
+#shipping_country_field label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #7f7f7f;
+    margin-bottom: 8px;
+    display: block;
+    font-family: 'IBM Plex Sans';
+}
+
+#billing_country_field .select2-container,
+#shipping_country_field .select2-container {
+    width: 100% !important;
+}
+
+#billing_country_field .select2-container .select2-selection--single,
+#shipping_country_field .select2-container .select2-selection--single {
+    height: 56px;
+    padding: 8px 16px;
+    border: 1px solid #E7EBF1;
+    border-radius: 8px;
+    background: #F7F8FB;
+    display: flex;
+    align-items: center;
+}
+
+#billing_country_field .select2-container--default .select2-selection--single .select2-selection__rendered,
+#shipping_country_field .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: var(--primaryBlue);
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 16px;
+    font-family: 'IBM Plex Sans';
+    line-height: 56px;
+}
+
+#billing_country_field .select2-container--default .select2-selection--single .select2-selection__arrow,
+#shipping_country_field .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 54px;
+    right: 16px;
+}
+
+/* Country field focus state */
+#billing_country_field .select2-container--open .select2-selection--single,
+#shipping_country_field .select2-container--open .select2-selection--single {
+    border-color: var(--primaryBlue);
+    background: var(--white);
+}
+
+/* Select2 dropdown styling */
+.select2-dropdown {
+    border: 1px solid #E7EBF1;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.select2-results__option {
+    padding: 8px 16px;
+    font-family: 'IBM Plex Sans';
+    font-size: 14px;
+}
+
+.select2-results__option--highlighted {
+    background: var(--primaryBlue);
+    color: white;
+}
+
+/* Fix Country Field Styling */
+#billing_country_field,
+#shipping_country_field {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+    clear: both;
+}
+
+/* Hide the original country label */
+#billing_country_field > label:first-child,
+#shipping_country_field > label:first-child {
+    display: none !important;
+}
+
+/* Country field container with floating label style */
+#billing_country_field .woocommerce-input-wrapper,
+#shipping_country_field .woocommerce-input-wrapper {
+    position: relative;
+}
+
+/* Add "Country" label inside the Select2 field */
+#billing_country_field .woocommerce-input-wrapper::before,
+#shipping_country_field .woocommerce-input-wrapper::before {
+    content: "Country";
+    position: absolute;
+    top: 6px;
+    left: 16px;
+    font-size: 10px;
+    font-weight: 400;
+    color: #888888;
+    font-family: 'IBM Plex Sans';
+    pointer-events: none;
+    z-index: 2;
+    line-height: 1;
+}
+
+/* Style the Select2 container to match other fields */
+#billing_country_field .select2-container,
+#shipping_country_field .select2-container {
+    width: 100% !important;
+}
+
+#billing_country_field .select2-container .select2-selection--single,
+#shipping_country_field .select2-container .select2-selection--single {
+    height: 56px;
+    padding: 20px 16px 8px 16px;
+    border: 1px solid #E7EBF1;
+    border-radius: 8px;
+    background: #F7F8FB;
+    font-size: 16px;
+    font-family: 'IBM Plex Sans';
+    position: relative;
+}
+
+
+/* Selected value styling */
+#billing_country_field .select2-container--default .select2-selection--single .select2-selection__rendered,
+#shipping_country_field .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #000000;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'IBM Plex Sans';
+    line-height: 24px;
+    margin-top: 8px;
+    display: block;
+}
+
+/* Arrow styling */
+#billing_country_field .select2-container--default .select2-selection--single .select2-selection__arrow,
+#shipping_country_field .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 54px;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#billing_country_field .select2-container--default .select2-selection--single .select2-selection__arrow b,
+#shipping_country_field .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: #7f7f7f transparent transparent transparent;
+    border-width: 6px 4px 0 4px;
+    margin-left: -4px;
+    margin-top: -3px;
+}
+
+/* Focus state */
+#billing_country_field .select2-container--open .select2-selection--single,
+#shipping_country_field .select2-container--open .select2-selection--single,
+#billing_country_field .select2-container--focus .select2-selection--single,
+#shipping_country_field .select2-container--focus .select2-selection--single {
+    border-color: var(--primaryBlue);
+    background: var(--white);
+    box-shadow: 0 0 0 3px rgba(0, 33, 71, 0.1);
+}
+
+/* Dropdown styling */
+.select2-dropdown {
+    border: 1px solid #E7EBF1;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-top: 4px;
+}
+
+.select2-search--dropdown {
+    padding: 8px;
+}
+
+.select2-search--dropdown .select2-search__field {
+    padding: 8px 12px;
+    border: 1px solid #E7EBF1;
+    border-radius: 6px;
+    font-family: 'IBM Plex Sans';
+    font-size: 14px;
+}
+
+.select2-results {
+    padding: 4px 0;
+}
+
+.select2-results__option {
+    padding: 10px 16px;
+    font-family: 'IBM Plex Sans';
+    font-size: 14px;
+    color: var(--primaryBlue);
+}
+
+.select2-results__option--highlighted[aria-selected] {
+    background: var(--primaryBlue);
+    color: white;
+}
+
+.select2-results__option[aria-selected="true"] {
+    background: #f0f4f8;
+    color: var(--primaryBlue);
+    font-weight: 500;
+}
+
+/* Hide the placeholder text when country is selected */
+#billing_country_field .select2-selection__placeholder,
+#shipping_country_field .select2-selection__placeholder {
+    display: none;
 }

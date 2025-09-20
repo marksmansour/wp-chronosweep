@@ -1753,3 +1753,180 @@ add_action('woocommerce_order_status_changed', function($order_id){
 		}
 	}
 }, 10, 1);
+
+// Convert labels to floating placeholders (exclude country and section titles)
+add_filter('woocommerce_form_field_args', 'floating_label_checkout_fields', 10, 3);
+function floating_label_checkout_fields($args, $key, $value) {
+    if (is_checkout()) {
+        // For section fields, completely skip them
+        if (strpos($key, 'section_') === 0 || strpos($key, 'billing_section_') === 0) {
+            $args['type'] = 'hidden'; // Hide them from normal rendering
+            return $args;
+        }
+        
+        // Skip country fields completely - they don't need floating labels
+        if ($key === 'billing_country' || $key === 'shipping_country') {
+            return $args;
+        }
+        
+        // Store the label text as placeholder
+        if (isset($args['label'])) {
+            $label_text = strip_tags($args['label']);
+            $label_text = str_replace('*', '', $label_text); // Remove asterisk
+            $label_text = trim($label_text);
+            $args['placeholder'] = $label_text;
+        }
+        
+        // Add floating label class
+        if (!in_array('floating-label', $args['class'])) {
+            $args['class'][] = 'floating-label';
+        }
+        
+        // Add has-value class if field has content
+        if ($value && !in_array('has-value', $args['class'])) {
+            $args['class'][] = 'has-value';
+        }
+    }
+    return $args;
+}
+
+// Custom form field template for floating labels (exclude select fields)
+add_filter('woocommerce_form_field', 'custom_floating_label_form_field', 10, 4);
+function custom_floating_label_form_field($field, $key, $args, $value) {
+    // Only apply to checkout fields with floating-label class, exclude select fields
+    if (is_checkout() && in_array('floating-label', $args['class']) && 
+        $args['type'] !== 'select' && $args['type'] !== 'country') {
+        
+        $field_html = '';
+        $field_container = '<p class="%1$s" id="%2$s" data-priority="%3$s">%4$s</p>';
+        
+        $container_class = esc_attr(implode(' ', $args['class']));
+        $container_id = esc_attr($args['id']) . '_field';
+        $priority = $args['priority'] ? $args['priority'] : '';
+        
+        // Add has-value class if field has content
+        if ($value && $value !== '') {
+            $container_class .= ' has-value';
+        }
+        
+        $field_html .= '<span class="woocommerce-input-wrapper floating-input-wrapper">';
+        
+        // Input field
+        if ($args['type'] === 'text' || $args['type'] === 'email' || $args['type'] === 'tel') {
+            $field_html .= sprintf(
+                '<input type="%s" class="input-text %s" name="%s" id="%s" placeholder=" " value="%s" %s %s data-placeholder="%s" />',
+                esc_attr($args['type']),
+                esc_attr(implode(' ', (array) $args['input_class'])),
+                esc_attr($key),
+                esc_attr($args['id']),
+                esc_attr($value),
+                $args['required'] ? 'required="required"' : '',
+                isset($args['autocomplete']) ? 'autocomplete="' . esc_attr($args['autocomplete']) . '"' : '',
+                esc_attr($args['placeholder'])
+            );
+        }
+        
+        // Floating label
+        $required = $args['required'] ? ' <span class="required">*</span>' : '';
+        $field_html .= sprintf(
+            '<label for="%s" class="floating-label-text">%s%s</label>',
+            esc_attr($args['id']),
+            esc_html($args['label']),
+            $required
+        );
+        
+        $field_html .= '</span>';
+        
+        $field = sprintf($field_container, $container_class, $container_id, $priority, $field_html);
+    }
+    
+    return $field;
+}
+
+// Clean up the field classes - remove customInputStyle when floating-label is present
+add_filter('woocommerce_form_field_args', 'clean_floating_label_classes', 15, 3);
+function clean_floating_label_classes($args, $key, $value) {
+    if (is_checkout() && in_array('floating-label', $args['class'])) {
+        // Remove customInputStyle to avoid conflicts
+        $args['class'] = array_diff($args['class'], ['customInputStyle']);
+    }
+    return $args;
+}
+
+// Add JavaScript for floating labels
+add_action('wp_footer', 'floating_labels_script');
+function floating_labels_script() {
+    if (is_checkout()) {
+        ?>
+        <script>
+        jQuery(document).ready(function($) {
+            // Function to check if input has value and add class
+            function checkFloatingLabels() {
+                $('.floating-label input').each(function() {
+                    var $input = $(this);
+                    var $label = $input.next('.floating-label-text');
+                    
+                    if ($input.val() && $input.val().length > 0) {
+                        $input.closest('.floating-label').addClass('has-value');
+                        $input.attr('data-has-value', 'true');
+                    } else {
+                        $input.closest('.floating-label').removeClass('has-value');
+                        $input.attr('data-has-value', 'false');
+                    }
+                });
+            }
+            
+            // Check on page load
+            checkFloatingLabels();
+            
+            // Check on input change
+            $('.floating-label input').on('input blur', function() {
+                checkFloatingLabels();
+            });
+            
+            // Check after AJAX updates
+            $(document.body).on('updated_checkout', function() {
+                setTimeout(checkFloatingLabels, 100);
+            });
+        });
+        </script>
+        <?php
+    }
+}
+
+// Fix all field priorities and ordering - single source of truth
+add_filter('woocommerce_checkout_fields', 'fix_checkout_field_priorities', 999);
+function fix_checkout_field_priorities($fields) {
+    // Set all field priorities to ensure proper ordering
+    $fields['billing']['billing_first_name']['priority'] = 10;
+    $fields['billing']['billing_last_name']['priority'] = 20;
+    $fields['billing']['billing_address_1']['priority'] = 30;
+    $fields['billing']['billing_address_2']['priority'] = 40;
+    $fields['billing']['billing_city']['priority'] = 50;
+    $fields['billing']['billing_postcode']['priority'] = 60;
+    $fields['billing']['billing_country']['priority'] = 70;
+    $fields['billing']['billing_phone']['priority'] = 80;
+    $fields['billing']['billing_email']['priority'] = 90;
+    $fields['billing']['billing_email_confirm']['priority'] = 100;
+    
+    // Ensure country field has proper class
+    if (isset($fields['billing']['billing_country'])) {
+        $fields['billing']['billing_country']['class'] = array('form-row-wide');
+        $fields['billing']['billing_country']['label'] = __('Country', 'woocommerce');
+    }
+    
+    // Remove the section fields - we'll add them via JavaScript instead
+    unset($fields['billing']['billing_section_name']);
+    unset($fields['billing']['billing_section_address']);
+    unset($fields['billing']['billing_section_contact']);
+    
+    return $fields;
+}
+
+// Remove the render_section_title_field function since we're handling it in JS now
+// Delete or comment out this:
+// add_filter('woocommerce_form_field_section_title', 'render_section_title_field', 10, 4);
+// function render_section_title_field($field, $key, $args, $value) {
+//     return '<div class="checkout-section-title-wrapper form-row-wide"><h4 class="checkout-section-title">' . esc_html($args['label']) . '</h4></div>';
+// }
+    

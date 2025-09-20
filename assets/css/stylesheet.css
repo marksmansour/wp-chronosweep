@@ -311,6 +311,9 @@ a[href] {
     z-index: 1;
     position: relative;
 }
+.home .headerWrap {
+    margin-top: 40px;
+}
 .headerContainer{
     max-width: 1688px;
     margin: auto;

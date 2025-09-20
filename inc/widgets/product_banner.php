@@ -162,6 +162,15 @@
                             </div>
                         </div>
                         <div class="productDetailsOnlyMobile">
+                            <?php
+                                if($status == true){
+                            ?>
+                                <div class="btnWrap mobileEnterNowBtn <?= WOW_ANIMATION_CLASS_FADEINUP_SMALL ?>" data-wow-delay='0.1s'>
+                                    <a href="<?= get_the_permalink($productId) ?>" class="btn btnPrimaryBlue mobileEnterBtn">Enter now</a>
+                                </div>
+                            <?php
+                                }
+                            ?>
                             <div class="btnWrap <?= WOW_ANIMATION_CLASS_FADEINUP_SMALL ?>"  data-wow-delay='0.2s'>
                                 <a class="moreDetailsBtn size18 lightWhite"><span class="linkLabel">More details</span><span class="dropDown down"></a>
                             </div>

@@ -286,6 +286,14 @@
                                         <div class="productGalleryTopItemImage">
                                             <div class="sizer"></div>
                                             <?= image_on_fly($items['product_extra_details_product_gallery_image'], array('1400', 'auto')); ?>
+                                            <?php 
+                                                $worthValue = get_field('product_extra_details_watch_value', $productId);
+                                                if($worthValue) {
+                                            ?>
+                                                <div class="productWorthBadge mobileOnly">
+                                                    <span class="size14 fontWeight500 white">Worth <?= $currencySymbol; ?><?= number_format($worthValue); ?></span>
+                                                </div>
+                                            <?php } ?>
                                         </div>
                                     </div>
                                 <?php
@@ -296,6 +304,14 @@
                                             <div class="productGalleryTopItemVideo">
                                                 <video muted="" autoplay="" loop="" playsinline="" webkit-playsinline="" id="video" data-mobile="true" preload="none"><source src="<?= $items['product_extra_details_product_gallery_video']; ?>" type="video/mp4"></video>
                                             </div>
+                                            <?php 
+                                                $worthValue = get_field('product_extra_details_watch_value', $productId);
+                                                if($worthValue) {
+                                            ?>
+                                                <div class="productWorthBadge mobileOnly">
+                                                    <span class="size14 fontWeight500 white">Worth <?= $currencySymbol; ?><?= number_format($worthValue); ?></span>
+                                                </div>
+                                            <?php } ?>
                                         </div>
                                     </div>
                                 <?php

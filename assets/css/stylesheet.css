@@ -2910,15 +2910,14 @@ input[type=text].referId{
 /* Mobile Enter Now Button */
 .mobileEnterNowBtn {
     text-align: center;
-    margin-bottom: 24px;
+    padding: 12px 0 !important;
 }
 
 .mobileEnterBtn {
     border: 1px solid #A7B8D2;
     overflow: visible;
     animation: pulse 1.25s infinite cubic-bezier(0.66, 0.33, 0, 1);
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    margin: 0 !important;
     padding-top: 16px !important;
     padding-bottom: 16px !important;
 }
@@ -2949,5 +2948,19 @@ input[type=text].referId{
 
     .cky-revisit-bottom-right {
         display: none !important;
+    }
+
+    .productBannerTextContentWrap .textContentWrap {
+        padding: 0 24px 0 24px !important;
+    }
+
+    .productBannerWrap h1 {
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .productBannerWrap .ticketBar {
+        padding-top: 16px
     }
 }

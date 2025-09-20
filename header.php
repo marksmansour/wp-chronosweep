@@ -367,9 +367,9 @@
                                 }   
                                 if (!is_user_logged_in()) {
                             ?>
-                            <div class="mobileMenuItem menuItem black">
+                            <!-- <div class="mobileMenuItem menuItem black">
                                 <a href="<?= get_site_url().'/my-account'; ?>"><span class="mobileMenuItemlabel">Login / Register</span><span class="mobileMenuItemIcon dropDown right"></span></a>
-                            </div>
+                            </div> -->
                             <?php
                                 }else{
                             ?>

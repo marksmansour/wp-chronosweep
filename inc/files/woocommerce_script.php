@@ -1376,7 +1376,7 @@ function accountCreatePopupForm(){
 function mailchimp($data, $status, $echo){
     if ($data) {
         // MailChimp API credentials
-        $apiKey = '69ade13d680d4cd1a9de718e81d88b93-us13';
+        $apiKey = MAILCHIMP_API_KEY;
         $listID = 'ec9a68583b';
         
         // MailChimp API URL

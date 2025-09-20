@@ -219,7 +219,7 @@
             var _app_prefix = '<?php echo get_bloginfo('template_directory'); ?>';
             var ajax_url = "<?php echo admin_url(); ?>admin-ajax.php";
             var _wp_json_url = "<?= get_bloginfo('url') ?>/wp-json/v1";
-            var checkout_page = "<?= wc_get_checkout_url(); ?>";
+            var checkout_page = "<?php $cid = (int) get_option('woocommerce_checkout_page_id'); echo $cid ? esc_url( get_permalink($cid) ) : ''; ?>";
         </script>
         <?php wp_head(); ?>
     </head>
@@ -239,7 +239,8 @@
                 $headerId = url_to_postid('/header/header-footer');
                 $post = get_post($headerId);
                 setup_postdata($post);
-                $productLink = get_field('header_product_link');
+                $headerFields = cs_get_header_fields();
+                $productLink = $headerFields['product_link'];
             ?>
             <div class="header">
                 <div class="c">
@@ -256,7 +257,7 @@
                                     <span class="closeDiv"></span>
                                 </div>
                                 <?php
-                                    $mainMenu = get_field('main_menu');
+                                    $mainMenu = $headerFields['main_menu'];
                                     foreach($mainMenu as $mainMenuItem){
                                         $menuItemLink = $mainMenuItem['main_menu_page_link'];
                                         if($mainMenuItem['main_menu_link_type'] == "external"){
@@ -341,7 +342,7 @@
                         <p class="mobileMenuTitle">Navigation</p>
                         <div class="mobileMenu">
                             <?php
-                                $mainMenu = get_field('main_menu');
+                                $mainMenu = $headerFields['main_menu'];
                                 foreach($mainMenu as $mainMenuItem){
                                     $menuItemLink = $mainMenuItem['main_menu_page_link'];
                                     if($mainMenuItem['main_menu_link_type'] == "external"){
@@ -395,13 +396,7 @@
                             <p class="mobileMenuTitle">Social</p>
                             <div class="mobileMenuSocialMediaWrap">
                                 <?php
-                                    $page_id = get_the_ID();
-                                    $headerid = url_to_postid('/header/header-footer');
-                                    $post = get_post($headerid);
-                                    setup_postdata($post);
-                                ?>
-                                <?php
-                                    $socialMedia = get_field('social_media');
+                                    $socialMedia = $headerFields['social_media'];
                                     foreach ($socialMedia as $socialMediaItem) {
                                 ?>
                                     <div class="mobileMenuSocialMediaItem menuItem black">

@@ -139,3 +139,27 @@ function getActiveProductId(){
     }
     return $pId;
 }
+
+function cs_get_header_fields() {
+    static $cached = null;
+    if ($cached !== null) return $cached;
+    
+    $headerid = url_to_postid('/header/header-footer');
+    $post = get_post($headerid);
+    setup_postdata($post);
+    
+    $cached = [
+        'main_menu' => get_field('main_menu'),
+        'social_media' => get_field('social_media'),
+        'product_link' => get_field('header_product_link'),
+    ];
+    
+    wp_reset_postdata();
+    return $cached;
+}
+
+add_action('wp_enqueue_scripts', function(){
+	if ( ! ( function_exists('is_cart') && is_cart() ) && ! ( function_exists('is_checkout') && is_checkout() ) ) {
+		wp_dequeue_script('wc-cart-fragments'); // removes the AJAX that fires on every page
+	}
+}, 99);

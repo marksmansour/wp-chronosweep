@@ -137,7 +137,7 @@
                                                 }
                                                 ?>
                                                 <div class="footerBottomMenuItem cookiePrefernceWrap menuItem primaryBlack linkHover">
-                                                    <a class="cookiePrefernce"><span class='footerMenuItemlabel'>Cookie Perference</span></a>
+                                                    <a class="cookiePrefernce"><span class='footerMenuItemlabel'>Cookie Preferences</span></a>
                                                 </div>
                                             </div>
                                         </div>

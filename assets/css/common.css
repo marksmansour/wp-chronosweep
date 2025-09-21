@@ -236,8 +236,8 @@ textarea{
 .zoom-image:hover .bgimage {
     transform: scale(1.1, 1.1);
 }
-.bsz .bgimage { display: none; }
-.bsz img {
+.home .bsz .bgimage { display: none; }
+.home .bsz img {
     display: block;
     position: absolute;
     inset: 0;
